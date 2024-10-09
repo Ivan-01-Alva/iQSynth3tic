@@ -28,7 +28,7 @@ body {
 header {
     width: 100%;
     position: fixed;
-    background-color: var(--color-gris-claro);
+    background-color: var(--color-blanco);
     z-index: 1000;
     top: 0;
 }
@@ -54,7 +54,7 @@ header {
 
 .company-name {
     color: var(--color-blanco);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 
