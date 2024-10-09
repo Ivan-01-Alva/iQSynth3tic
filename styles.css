@@ -20,8 +20,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: var(--color-azul-oscuro);
-    background-color: var(--color-azul-oscuro);
+    color: var(--color-gris-oscuro);
+    background-color: var( --color-gris-claro);
 }
 
 /* Barra de Navegación */
