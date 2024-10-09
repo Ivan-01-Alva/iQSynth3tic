@@ -21,14 +21,14 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--color-gris-oscuro);
-    background-color: var( --color-gris-claro);
+    background-color: var(--color-gris-claro);
 }
 
 /* Barra de Navegación */
 header {
     width: 100%;
     position: fixed;
-    background-color: var(--color-azul-oscuro);
+    background-color: var(--color-gris-claro);
     z-index: 1000;
     top: 0;
 }
