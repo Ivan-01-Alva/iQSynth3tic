@@ -26,13 +26,18 @@ body {
 
 /* Barra de Navegación */
 header {
-    width: 100%;
+    width: 90%; /* Mantiene el ancho al 90% del contenedor */
     position: fixed;
     background-color: var(--color-blanco);
     z-index: 1000;
-    top: 0;
+    top: 20px; /* Espacio desde la parte superior */
+    left: 5%; /* Espacio desde los laterales */
+    right: 5%;
+    border-radius: 25%; /* Esquinas redondeadas al 25% */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombras opcionales para efecto de flotación */
 }
 
+/* El resto del código permanece igual */
 .navbar {
     display: flex;
     justify-content: space-between;
