@@ -33,7 +33,7 @@ header {
     top: 20px;
     left: 5%;
     right: 5%;
-    padding: 5px 2%; /* Ajuste del padding para hacerlo más angosto */
+    padding: 4px 1%; /* Ajuste del padding para hacerlo más angosto */
     border-radius: 0 50px 50px 0; /* Semicírculos en los extremos */
     border-top-left-radius: 50px; /* Radio grande para un semicírculo a la izquierda */
     border-top-right-radius: 50px; /* Radio grande para un semicírculo a la derecha */
@@ -47,7 +47,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0; /* Reduce el espacio interno para hacerlo más angosto */
+    padding: 4px 0; /* Reduce el espacio interno para hacerlo más angosto */
 }
 
 .logo a {
