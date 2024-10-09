@@ -105,7 +105,7 @@ header {
 
 /* Sección Hero */
 .hero {
-    background-color: var(--color-gris-claro);
+    background-color: var(--color-marron-rojizo);
     min-height: 100vh;
     display: flex;
     align-items: center;
