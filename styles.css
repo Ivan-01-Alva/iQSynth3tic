@@ -1,0 +1,405 @@
+/* Variables de Color */
+:root {
+    --color-azul-oscuro: #090c1b;
+    --color-marron-rojizo: #ad6d65;
+    --color-marron-rojizo-hover: #9c5d5a;
+    --color-gris-claro: #e0dcd2;
+    --color-gris-oscuro: #51434e;
+    --color-beige-rosado: #d5ab95;
+    --color-blanco: #ffffff;
+}
+
+/* Importar Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-azul-oscuro);
+    background-color: var(--color-azul-oscuro);
+}
+
+/* Barra de Navegación */
+header {
+    width: 100%;
+    position: fixed;
+    background-color: var(--color-azul-oscuro);
+    z-index: 1000;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.company-name {
+    color: var(--color-blanco);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--color-blanco);
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-marron-rojizo);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-blanco);
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Sección Hero */
+.hero {
+    background-color: var(--color-azul-oscuro);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    position: relative;
+    color: var(--color-azul-oscuro);
+}
+
+.hero-content {
+    background-color: var(--color-blanco); /* Fondo blanco */
+    padding: 40px;
+    border: 1px solid var(--color-gris-oscuro);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hero-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.keywords {
+    margin-bottom: 20px;
+}
+
+.keyword {
+    font-size: 2rem; /* Tamaño de fuente al doble */
+    line-height: 1.2;
+}
+
+.keyword.highlighted {
+    color: var(--color-marron-rojizo); /* Color marrón rojizo */
+}
+
+.frase-inspiradora {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+/* Botón */
+.btn {
+    background-color: var(--color-marron-rojizo);
+    color: var(--color-blanco);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--color-marron-rojizo-hover);
+}
+
+/* Sección de Servicios */
+.services {
+    padding: 100px 5%;
+    background-color: var(--color-beige-rosado);
+    text-align: center;
+    color: var(--color-azul-oscuro);
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-item {
+    background-color: var(--color-gris-claro);
+    border: 1px solid var(--color-gris-oscuro);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex: 1 1 250px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-item img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1rem;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Sección del Equipo */
+.team {
+    padding: 100px 5%;
+    background-color: var(--color-azul-oscuro);
+    text-align: center;
+    color: var(--color-blanco);
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    background-color: var(--color-gris-claro);
+    border: 1px solid var(--color-gris-oscuro);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex: 1 1 300px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    color: var(--color-azul-oscuro);
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.btn-contact {
+    background-color: var(--color-marron-rojizo);
+    color: var(--color-blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-contact:hover {
+    background-color: var(--color-marron-rojizo-hover);
+}
+
+/* Sección de Contacto */
+.contact {
+    padding: 100px 5%;
+    background-color: var(--color-azul-oscuro);
+    text-align: center;
+    color: var(--color-blanco);
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.contact .btn {
+    background-color: var(--color-marron-rojizo);
+    color: var(--color-blanco);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact .btn:hover {
+    background-color: var(--color-marron-rojizo-hover);
+}
+
+/* Pie de Página */
+footer {
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 20px 5%;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsividad */
+@media (max-width: 992px) {
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: var(--color-azul-oscuro);
+        width: 200px;
+        flex-direction: column;
+        text-align: right;
+        padding: 20px;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .services-container,
+    .team-container {
+        flex-direction: column;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Animación del menú responsive */
+.toggle .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.toggle .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-active {
+    display: flex;
+}
