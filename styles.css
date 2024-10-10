@@ -123,7 +123,7 @@ header {
     align-items: center; /* Centra el contenido verticalmente */
     justify-content: center; /* Centra el contenido horizontalmente */
     text-align: center; /* Centra el texto horizontalmente */
-    max-width: 120%; /* Ajustamos el ancho a 90% */
+    max-width: 100%; /* Ajustamos el ancho a 90% */
     margin: 100px auto; /* Centramos el contenedor horizontalmente */
     width: 100%; /* Aseguramos que el ancho sea coherente con la barra de navegación */
     border-radius: 45px;
