@@ -122,7 +122,7 @@ header {
     width: 90%;
     border-radius: 45px;
     background-image: url('fondo1.png'); /* Imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-size: contain; /* Ajusta la imagen para que se vea completa */
     background-position: center; /* Centra la imagen de fondo */
     box-sizing: border-box;
     min-height: 500px;
