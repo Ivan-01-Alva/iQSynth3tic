@@ -112,7 +112,7 @@ header {
 .hero-content {
     background-color: var(--color-blanco);
     background-image: url('assets/imagen1.jpg'); /* Imagen de fondo */
-    background-size: contain; /* Ajusta la imagen para que se vea completa */
+    background-size: cover; /* Ajusta la imagen para que se vea completa */
     background-position: center; /* Centra la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     min-height: 500px; /* Puedes cambiarlo a 500px si lo prefieres */
@@ -124,7 +124,7 @@ header {
     justify-content: center; /* Centra el contenido horizontalmente */
     text-align: center; /* Centra el texto horizontalmente */
     max-width: 100%; /* Ajustamos el ancho a 90% */
-    margin: 100px auto; /* Centramos el contenedor horizontalmente */
+    margin: 70px auto; /* Centramos el contenedor horizontalmente */
     width: 100%; /* Aseguramos que el ancho sea coherente con la barra de navegación */
     border-radius: 45px;
     box-sizing: border-box;
