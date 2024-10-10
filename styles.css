@@ -109,18 +109,20 @@ header {
 }
 
 .hero-content {
-    background-color: var(--color-blanco); /* Fondo blanco */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con transparencia del 50% */
     padding: 80px;
     border: 1px solid var(--color-gris-oscuro);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 90%; /* Igualamos el ancho al de la barra de navegación */
-    margin: 90px auto; /* Añadimos un margen superior e inferior de 20px, igual que el de la barra */
-    width: 98%; /* Mismo ancho que la barra de navegación */
-    border-radius: 45px; /* Boleado suave de las esquinas */
-    box-sizing: border-box;
+    max-width: 90%;
+    margin: 100px auto;
+    width: 90%;
+    border-radius: 45px;
+    background-image: url('fondo1.png'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-position: center; /* Centra la imagen de fondo */
 }
 
 .hero-text {
@@ -134,37 +136,28 @@ header {
 }
 
 .keywords {
+    font-size: 5rem;
     margin-bottom: 20px;
 }
 
 .keyword {
-    font-size: 3rem; /* Tamaño de fuente al doble */
+    font-size: 5rem;
     line-height: 2;
 }
 
 .keyword.highlighted {
-    color: var(--color-marron-rojizo); /* Color marrón rojizo */
+    font-size: 5rem;
+    color: var(--color-marron-rojizo);
 }
 
 .frase-inspiradora {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
 .hero-text p {
-    font-size: 1rem;
+    font-size: 2rem;
     margin-bottom: 20px;
-}
-
-.hero-image {
-    flex: 1;
-    text-align: center;
-}
-
-.hero-image img {
-    max-width: 75%;
-    height: auto;
-    max-height: 350px;
 }
 
 /* Botón */
@@ -183,7 +176,6 @@ header {
 .btn:hover {
     background-color: var(--color-marron-rojizo-hover);
 }
-
 
 /* Sección de Servicios */
 .services {
