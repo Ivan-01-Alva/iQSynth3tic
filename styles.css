@@ -28,7 +28,7 @@ body {
 header {
     width: 90%; /* Ajusta el ancho para que esté separado de los laterales */
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.25); /* Color blanco con 75% de transparencia */
+    background-color: rgba(255, 255, 255, 0.55); /* Color blanco con 75% de transparencia */
     z-index: 1000;
     top: 20px; /* Separa la barra de la parte superior */
     left: 50%; /* Centramos la barra horizontalmente */
