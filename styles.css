@@ -41,7 +41,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 10px 4%;
 }
 
 .logo a {
