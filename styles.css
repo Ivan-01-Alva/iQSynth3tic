@@ -28,7 +28,7 @@ body {
 header {
     width: 100%;
     position: fixed;
-    background-color: var(--color-azul-oscuro);
+    background-color: var(--color-blanco);
     z-index: 1000;
     top: 0;
 }
@@ -101,7 +101,7 @@ header {
     justify-content: center;
     padding: 0 5%;
     position: relative;
-    color: var(--color-blanco);
+    color: var(--color-gris-oscuro);
 }
 
 .hero-content {
@@ -155,9 +155,9 @@ header {
 }
 
 .hero-image img {
-    max-width: 50%;
+    max-width: 75%;
     height: auto;
-    max-height: 200px;
+    max-height: 350px;
 }
 
 /* Botón */
