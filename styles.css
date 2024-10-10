@@ -116,8 +116,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 2000px;
-    width: 120%;
+    max-width: 90%; /* Igualamos el ancho al de la barra de navegación */
+    margin: 20px auto; /* Añadimos un margen superior e inferior de 20px, igual que el de la barra */
+    width: 90%; /* Mismo ancho que la barra de navegación */
+    border-radius: 15px; /* Boleado suave de las esquinas */
 }
 
 .hero-text {
@@ -126,7 +128,7 @@ header {
 }
 
 .hero-text h1 {
-    font-size: 2.5rem;
+    font-size: 6rem;
     margin-bottom: 20px;
 }
 
@@ -135,7 +137,7 @@ header {
 }
 
 .keyword {
-    font-size: 2rem; /* Tamaño de fuente al doble */
+    font-size: 6rem; /* Tamaño de fuente al doble */
     line-height: 1.2;
 }
 
@@ -180,6 +182,7 @@ header {
 .btn:hover {
     background-color: var(--color-marron-rojizo-hover);
 }
+
 
 /* Sección de Servicios */
 .services {
