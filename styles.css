@@ -109,7 +109,7 @@ header {
 }
 
 .hero-content {
-    background-color: rgba(--color-blanco);
+    background-color: var(--color-blanco);
     background-image: url('imagen1.jpg'); /* Imagen de fondo */
     background-size: contain; /* Ajusta la imagen para que se vea completa */
     background-position: center; /* Centra la imagen de fondo */
