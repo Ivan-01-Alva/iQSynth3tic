@@ -128,7 +128,7 @@ header {
 }
 
 .hero-text h1 {
-    font-size: 9rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
@@ -137,8 +137,8 @@ header {
 }
 
 .keyword {
-    font-size: 9rem; /* Tamaño de fuente al doble */
-    line-height: 1.2;
+    font-size: 3rem; /* Tamaño de fuente al doble */
+    line-height: 2;
 }
 
 .keyword.highlighted {
@@ -146,7 +146,7 @@ header {
 }
 
 .frase-inspiradora {
-    font-size: 1.2rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
