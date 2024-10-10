@@ -120,6 +120,7 @@ header {
     margin: 90px auto; /* Añadimos un margen superior e inferior de 20px, igual que el de la barra */
     width: 98%; /* Mismo ancho que la barra de navegación */
     border-radius: 45px; /* Boleado suave de las esquinas */
+    box-sizing: border-box;
 }
 
 .hero-text {
