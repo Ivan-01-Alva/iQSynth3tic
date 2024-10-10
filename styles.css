@@ -109,7 +109,12 @@ header {
 }
 
 .hero-content {
-    background-color: rgba(--color-blanco); /* Fondo blanco con transparencia del 50% */
+    background-color: rgba(--color-blanco);
+    background-image: url('imagen1.jpg'); /* Imagen de fondo */
+    background-size: contain; /* Ajusta la imagen para que se vea completa */
+    background-position: center; /* Centra la imagen de fondo */
+    box-sizing: border-box;
+    min-height: 500px;
     padding: 40px;
     border: 1px solid var(--color-gris-oscuro);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -121,12 +126,7 @@ header {
     margin: 100px auto;
     width: 90%;
     border-radius: 45px;
-    background-image: url('imagen1.jpg'); /* Imagen de fondo */
-    background-size: contain; /* Ajusta la imagen para que se vea completa */
-    background-position: center; /* Centra la imagen de fondo */
-    box-sizing: border-box;
-    min-height: 500px;
-}
+    }
 
 .hero-text {
     margin: 0; /* Elimina el margen innecesario ahora que el texto está centrado */
