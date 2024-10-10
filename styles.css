@@ -125,6 +125,9 @@ header {
     max-width: 90%;
     margin: 100px auto;
     width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 45px;
     }
 
