@@ -94,14 +94,14 @@ header {
 
 /* Sección Hero */
 .hero {
-    background-color: var(--color-azul-oscuro);
+    background-color: var(--color-blanco);
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 5%;
     position: relative;
-    color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
 }
 
 .hero-content {
@@ -112,7 +112,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1500px;
     width: 100%;
 }
 
@@ -155,9 +155,9 @@ header {
 }
 
 .hero-image img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
-    max-height: 400px;
+    max-height: 200px;
 }
 
 /* Botón */
