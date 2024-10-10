@@ -53,7 +53,7 @@ header {
 }
 
 .company-name {
-    color: var(--color-blanco);
+    color: var(--color-gris-oscuro);
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -70,7 +70,7 @@ header {
 .nav-links a {
     text-decoration: none;
     font-size: 1rem;
-    color: var(--color-blanco);
+    color: var(--color-gris-oscuro);
     transition: color 0.3s;
 }
 
@@ -94,7 +94,7 @@ header {
 
 /* Sección Hero */
 .hero {
-    background-color: var(--color-blanco);
+    background-color: var(--color-azul-oscuro);
     min-height: 100vh;
     display: flex;
     align-items: center;
