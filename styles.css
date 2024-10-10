@@ -123,8 +123,8 @@ header {
     justify-content: center; /* Centra el contenido horizontalmente */
     text-align: center; /* Centra el texto horizontalmente */
     max-width: 90%;
-    margin: 140px auto;
-    width: 90%;
+    margin: 100px auto;
+    width: 120%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
