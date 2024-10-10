@@ -118,7 +118,7 @@ header {
     justify-content: space-between;
     max-width: 90%; /* Igualamos el ancho al de la barra de navegación */
     margin: 20px auto; /* Añadimos un margen superior e inferior de 20px, igual que el de la barra */
-    width: 90%; /* Mismo ancho que la barra de navegación */
+    width: 95%; /* Mismo ancho que la barra de navegación */
     border-radius: 15px; /* Boleado suave de las esquinas */
 }
 
