@@ -114,7 +114,8 @@ header {
     background-image: url('assets/imagen1.jpg'); /* Imagen de fondo */
     background-size: contain; /* Ajusta la imagen para que se vea completa */
     background-position: center; /* Centra la imagen de fondo */
-    min-height: 300px;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 300px; /* Puedes cambiarlo a 500px si lo prefieres */
     padding: 40px;
     border: 1px solid var(--color-gris-oscuro);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -122,14 +123,13 @@ header {
     align-items: center; /* Centra el contenido verticalmente */
     justify-content: center; /* Centra el contenido horizontalmente */
     text-align: center; /* Centra el texto horizontalmente */
-    max-width: 90%;
-    margin: 100px auto;
-    width: 120%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    max-width: 90%; /* Ajustamos el ancho a 90% */
+    margin: 100px auto; /* Centramos el contenedor horizontalmente */
+    width: 90%; /* Aseguramos que el ancho sea coherente con la barra de navegación */
     border-radius: 45px;
-    }
+    box-sizing: border-box;
+}
+
 
 .hero-text {
     margin: 0; /* Elimina el margen innecesario ahora que el texto está centrado */
