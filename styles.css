@@ -106,14 +106,14 @@ header {
 
 .hero-content {
     background-color: var(--color-blanco); /* Fondo blanco */
-    padding: 40px;
+    padding: 80px;
     border: 1px solid var(--color-gris-oscuro);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1500px;
-    width: 100%;
+    max-width: 2000px;
+    width: 120%;
 }
 
 .hero-text {
