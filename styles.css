@@ -119,7 +119,7 @@ header {
     max-width: 90%; /* Igualamos el ancho al de la barra de navegación */
     margin: 90px auto; /* Añadimos un margen superior e inferior de 20px, igual que el de la barra */
     width: 98%; /* Mismo ancho que la barra de navegación */
-    border-radius: 30px; /* Boleado suave de las esquinas */
+    border-radius: 45px; /* Boleado suave de las esquinas */
 }
 
 .hero-text {
