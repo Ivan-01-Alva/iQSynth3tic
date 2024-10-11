@@ -168,7 +168,7 @@ header {
 /* Botón */
 .hero .btn {
     position: absolute; /* Posiciona el botón absolutamente dentro de la sección Hero */
-    bottom: 20px; /* Lo coloca cerca del borde inferior */
+    bottom: 50px; /* Lo coloca cerca del borde inferior */
     left: 50%; /* Lo centra horizontalmente */
     transform: translateX(-50%); /* Lo ajusta para centrarlo exactamente */
     background-color: var(--color-marron-rojizo);
