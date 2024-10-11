@@ -98,46 +98,71 @@ header {
 
 /* Sección Hero */
 .hero {
+    background-color: var(--color-blanco);
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background-color: var(--color-blanco);
     padding: 0 5%;
+    position: relative;
+    color: var(--color-gris-oscuro);
+    box-sizing: border-box;
 }
 
 .hero-content {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.hero-left, .hero-right {
-    flex: 1;
+    background-color: var(--color-blanco);
+    background-image: url('assets/fondo4.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para que se vea completa */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 850px; /* Puedes cambiarlo a 500px si lo prefieres */
     padding: 40px;
+    border: 1px solid var(--color-gris-oscuro);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    max-width: 100%; /* Ajustamos el ancho a 90% */
+    margin: 100px auto; /* Centramos el contenedor horizontalmente */
+    width: 100%; /* Aseguramos que el ancho sea coherente con la barra de navegación */
+    border-radius: 45px;
+    box-sizing: border-box;
 }
 
-.hero-left {
-    background-color: var(--color-blanco); /* Lado izquierdo blanco */
+
+.hero-text {
+    margin: 0; /* Elimina el margen innecesario ahora que el texto está centrado */
 }
 
-.hero-right {
-    background-image: url('assets/hero-image.webp'); /* Asegúrate de que la ruta de la imagen sea correcta */
-    background-size: cover;
-    background-position: center right; /* Imagen en el lado derecho */
-    color: var(--color-blanco); /* Asegúrate de que el texto sea visible */
-}
-
-.hero-right .hero-text-right {
-    text-align: center;
+.hero-text h1 {
     font-size: 3rem;
-    color: var(--color-marron-rojizo); /* El color de "Evolución" */
+    margin-bottom: 20px;
+}
+
+.keywords {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.keyword {
+    font-size: 1.3rem;
+    line-height: 2;
+}
+
+.keyword.highlighted {
+    font-size: 5rem;
+    color: var(--color-marron-rojizo);
+}
+
+.frase-inspiradora {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
 }
 
 /* Botón */
@@ -392,3 +417,4 @@ footer p {
 .nav-active {
     display: flex;
 }
+
