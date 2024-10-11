@@ -190,7 +190,7 @@ header {
 /* Sección de Servicios */
 .services {
     padding: 100px 5%;
-    background-color: var(--color-blanco);
+    background-color: var(--color-azul-oscuro);
     text-align: center;
     color: var(--color-azul-oscuro);
 }
