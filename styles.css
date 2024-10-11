@@ -176,7 +176,7 @@ header {
     padding: 12px 30px;
     border: 2px solid var(--color-marron-rojizo); /* Contorno con el mismo color */
     border-radius: 50px; /* Bordes redondeados */
-    font-size: 1rem;
+    font-size: 1.3rem;
     cursor: pointer;
     transition: all 0.3s; /* Transición para el hover */
     text-decoration: none;
