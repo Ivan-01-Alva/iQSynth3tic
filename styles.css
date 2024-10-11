@@ -34,14 +34,14 @@ header {
     left: 50%; /* Centramos la barra horizontalmente */
     transform: translateX(-50%); /* Corregimos la posición para centrarla */
     border-radius: 50px; /* Redondeamos las esquinas para crear la forma de medio círculo */
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1); /* Añadimos una sombra para darle un efecto flotante */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1); /* Añadimos una sombra para darle un efecto flotante */
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 3%;
+    padding: 6px 3%;
 }
 
 .logo a {
