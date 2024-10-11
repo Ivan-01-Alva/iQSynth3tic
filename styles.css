@@ -147,57 +147,6 @@ header {
     color: var(--color-marron-rojizo);
 }
 
-/* Sección Hero */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: var(--color-blanco);
-    padding: 0 5%;
-}
-
-.hero-content {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.hero-left {
-    background-color: var(--color-blanco); /* Lado izquierdo con fondo blanco */
-    flex: 1;
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.hero-right {
-    background-image: url('ruta/a/tu/imagen.jpg'); /* Coloca aquí la ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    flex: 1;
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-blanco); /* Asegúrate de que el texto sea visible */
-}
-
-.hero-text-left h1, .hero-text-left p {
-    text-align: center;
-}
-
-.hero-text-right h1 {
-    font-size: 3rem;
-    text-align: center;
-    color: var(--color-marron-rojizo);
-}
-
 
 /* Botón */
 .hero .btn {
