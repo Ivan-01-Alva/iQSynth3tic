@@ -171,20 +171,24 @@ header {
     bottom: 50px; /* Lo coloca cerca del borde inferior */
     left: 50%; /* Lo centra horizontalmente */
     transform: translateX(-50%); /* Lo ajusta para centrarlo exactamente */
-    background-color: var(--color-marron-rojizo);
-    color: var(--color-blanco);
+    background-color: transparent; /* Fondo transparente */
+    color: var(--color-marron-rojizo); /* Texto del mismo color que el contorno */
     padding: 12px 30px;
-    border: none;
-    border-radius: 50px;
+    border: 2px solid var(--color-marron-rojizo); /* Contorno con el mismo color */
+    border-radius: 50px; /* Bordes redondeados */
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s; /* Transición para el hover */
     text-decoration: none;
+    box-shadow: 0 5px 15px rgba(173, 109, 101, 0.5); /* Sombra pronunciada con el mismo color */
 }
 
-.btn:hover {
-    background-color: var(--color-marron-rojizo-hover);
+.hero .btn:hover {
+    background-color: var(--color-marron-rojizo); /* Fondo al pasar el mouse */
+    color: var(--color-blanco); /* Cambia el color del texto en hover */
+    box-shadow: 0 8px 20px rgba(173, 109, 101, 0.7); /* Sombra más pronunciada en hover */
 }
+
 
 
 /* Sección de Servicios */
