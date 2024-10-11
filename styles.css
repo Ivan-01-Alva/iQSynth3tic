@@ -186,7 +186,7 @@ header {
 .hero .btn:hover {
     background-color: var(--color-marron-rojizo); /* Fondo al pasar el mouse */
     color: var(--color-blanco); /* Cambia el color del texto en hover */
-    box-shadow: 0 8px 20px rgba(173, 109, 101, 0.7); /* Sombra más pronunciada en hover */
+    box-shadow: 0 6px 12px rgba(173, 109, 101, 0.7); /* Sombra más pronunciada en hover */
 }
 
 
