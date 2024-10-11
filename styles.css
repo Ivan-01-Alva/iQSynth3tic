@@ -180,7 +180,7 @@ header {
     cursor: pointer;
     transition: all 0.3s; /* Transición para el hover */
     text-decoration: none;
-    box-shadow: 0 5px 15px rgba(173, 109, 101, 0.5); /* Sombra pronunciada con el mismo color */
+    box-shadow: 0 10px 25px rgba(173, 109, 101, 0.5); /* Sombra pronunciada con el mismo color */
 }
 
 .hero .btn:hover {
