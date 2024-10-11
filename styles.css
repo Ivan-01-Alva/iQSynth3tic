@@ -172,7 +172,7 @@ header {
     left: 50%; /* Lo centra horizontalmente */
     transform: translateX(-50%); /* Lo ajusta para centrarlo exactamente */
     background-color: transparent; /* Fondo transparente */
-    color: var( --color-gris-claro); /* Texto del mismo color que el contorno */
+    color: var(--color-gris-claro); /* Texto del mismo color que el contorno */
     padding: 12px 30px;
     border: 2px solid var(--color-marron-rojizo); /* Contorno con el mismo color */
     border-radius: 50px; /* Bordes redondeados */
