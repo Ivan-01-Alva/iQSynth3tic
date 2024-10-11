@@ -115,38 +115,30 @@ header {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-.hero-left {
-    background-color: var(--color-blanco); /* Lado izquierdo con fondo blanco */
+.hero-left, .hero-right {
     flex: 1;
     padding: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+}
+
+.hero-left {
+    background-color: var(--color-blanco); /* Lado izquierdo blanco */
 }
 
 .hero-right {
-    background-image: url('assets/fondo4.jpg'); /* Coloca aquí la ruta de tu imagen de fondo */
+    background-image: url('assets/hero-image.webp'); /* Asegúrate de que la ruta de la imagen sea correcta */
     background-size: cover;
-    background-position: center;
-    flex: 1;
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-position: center right; /* Imagen en el lado derecho */
     color: var(--color-blanco); /* Asegúrate de que el texto sea visible */
 }
 
-.hero-text-left h1, .hero-text-left p {
+.hero-right .hero-text-right {
     text-align: center;
-}
-
-.hero-text-right h1 {
     font-size: 3rem;
-    text-align: center;
-    color: var(--color-marron-rojizo);
+    color: var(--color-marron-rojizo); /* El color de "Evolución" */
 }
-
 
 /* Botón */
 .hero .btn {
