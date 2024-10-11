@@ -89,7 +89,7 @@ header {
 }
 
 .hamburger .bar {
-    width: 25px;
+    width: 20px;
     height: 3px;
     background-color: var(--color-azul-oscuro);
     margin: 4px 0;
