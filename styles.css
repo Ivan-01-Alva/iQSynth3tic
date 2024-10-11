@@ -126,7 +126,7 @@ header {
 }
 
 .hero-right {
-    background-image: url('ruta/a/tu/imagen.jpg'); /* Coloca aquí la ruta de tu imagen de fondo */
+    background-image: url('assets/fondo4.jpg'); /* Coloca aquí la ruta de tu imagen de fondo */
     background-size: cover;
     background-position: center;
     flex: 1;
