@@ -21,7 +21,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--color-azul-oscuro);
-    background-color: var(--color-azul-oscuro);
+    background-color: var(--color-blanco);
 }
 
 /* Barra de Navegación */
@@ -91,14 +91,14 @@ header {
 .hamburger .bar {
     width: 20px;
     height: 3px;
-    background-color: var(--color-azul-oscuro);
+    background-color: var(--color-blanco);
     margin: 4px 0;
     transition: 0.4s;
 }
 
 /* Sección Hero */
 .hero {
-    background-color: var(--color-azul-oscuro);
+    background-color: var(--color-blanco);
     min-height: 100vh;
     display: flex;
     align-items: center;
