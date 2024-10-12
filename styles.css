@@ -161,7 +161,7 @@ header {
 .hero-left-rectangle .btn:hover {
     background-image: url('assets/fondo2.png'); /* Fondo con imagen cuando se activa */
     background-size: cover;
-    color: var(--color-marron-rojizo-hover); /* Color de texto cuando se activa */
+    color: var(--color-blanco); /* Color de texto cuando se activa */
 }
 
 /* Rectángulo derecho con imagen de fondo y texto "Evolución" */
