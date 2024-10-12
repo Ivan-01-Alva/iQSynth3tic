@@ -159,7 +159,7 @@ header {
     font-size: 1rem;
     cursor: pointer;
     margin-top: auto;
-    margin-bottom: 20px; /* Asegurar espacio desde el borde inferior */
+    margin-bottom: 10px; /* Asegurar espacio desde el borde inferior */
     text-decoration: none;
     background-image: none; /* Imagen de fondo desactivada */
     transition: background-color 0.3s, color 0.3s;
