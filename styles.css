@@ -212,7 +212,7 @@ header {
 .moving-text {
     font-size: 1.5rem; /* Tamaño pequeño pero legible */
     font-weight: 500; /* Grosor ligero para el texto */
-    color: var(--color-azul-oscuro);
+    color: #00AAFF;
     animation: moveText 15s linear infinite; /* Animación para mover el texto */
 }
 
