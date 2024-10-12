@@ -190,7 +190,7 @@ header {
 
 /* Texto "Evolución" en el rectángulo derecho */
 .hero-right-rectangle .evolucion-text {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: var(--color-blanco);
     text-align: center;
 }
