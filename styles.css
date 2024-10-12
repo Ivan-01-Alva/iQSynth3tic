@@ -213,7 +213,7 @@ header {
 
 /* Sincronización de la segunda frase */
 .moving-text:nth-child(2) {
-    animation-delay: 15s; /* La segunda frase comenzará 15s después de la primera */
+    animation-delay: 10s; /* La segunda frase comenzará 15s después de la primera */
 }
 
 /* Animación para que las frases se desplacen */
