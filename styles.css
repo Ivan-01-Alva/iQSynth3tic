@@ -126,27 +126,30 @@ header {
     font-size: 2rem; /* Tamaño ajustable */
 }
 
-/* Palabras: Innovación, Tecnología, Crecimiento, centradas y con desfase en Tecnología */
+/* Título "Contenido + iA" con más espacio */
+.hero-left-rectangle .hero-text h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+    margin-bottom: 80px; /* Añadir más espacio debajo del título */
+}
+
+/* Palabras: Innovación, Tecnología, Crecimiento centradas */
 .hero-left-rectangle .keywords {
-    margin: center;
-    font-size: 4rem; /* Aumentar el tamaño de la fuente 4 veces */
+    margin: 0 auto;
+    font-size: 4rem; /* Tamaño de las palabras clave */
+    line-height: 1.2;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar las palabras en el rectángulo */
-    margin-right: 30px; /* Mover Tecnología ligeramente a la izquierda */
+    justify-content: center; /* Centrar verticalmente */
+    height: 100%; /* Ocupa todo el rectángulo */
 }
 
-.hero-left-rectangle .keyword {
-    line-height: 1.2;
-}
-
-/* Desfase en la palabra "Tecnología" */
 .hero-left-rectangle .keyword.highlighted {
     color: #00AAFF; /* Cambiar color de Tecnología */
-    margin-left: 60px; /* Mover Tecnología ligeramente a la derecha */
+    margin-left: 0; /* Asegurarse que Tecnología esté centrada */
 }
 
-/* Botón más cerca del borde inferior */
+/* Botón a la parte inferior */
 .hero-left-rectangle .btn {
     background-color: var(--color-blanco); /* Fondo blanco desactivado */
     color: var(--color-gris-oscuro); /* Texto gris oscuro */
@@ -156,7 +159,7 @@ header {
     font-size: 1rem;
     cursor: pointer;
     margin-top: auto;
-    margin-bottom: 5px; /* Mover el botón más cerca del borde inferior */
+    margin-bottom: 20px; /* Asegurar espacio desde el borde inferior */
     text-decoration: none;
     background-image: none; /* Imagen de fondo desactivada */
     transition: background-color 0.3s, color 0.3s;
