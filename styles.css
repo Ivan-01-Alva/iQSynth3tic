@@ -175,7 +175,7 @@ header {
     align-items: flex-end; /* Alinear el texto "Evolución" cerca del borde inferior */
     justify-content: center;
     padding-bottom: 20px;
-    border: 2px solid transparent; /* Sin bordes visibles */
+    border: none; /* Sin bordes visibles */
     border-radius: 45px; /* Bordes redondeados */
     box-shadow: -5px 0 15px rgba(0,0,0,0.1); /* Sombra sutil */
 }
