@@ -107,68 +107,60 @@ header {
     position: relative;
 }
 
-/* Rectángulo Izquierdo sin color en los bordes y esquinas redondeadas, sin sombra */
+/* Rectángulo Izquierdo sin color en los bordes y esquinas redondeadas */
 .hero-left-rectangle {
     width: 50%; /* Mantener un tamaño similar al del lado derecho */
     height: 70vh; /* Ajustar la altura del rectángulo */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between; /* Para que los elementos se ajusten a los bordes */
     text-align: center;
     border: 2px solid transparent; /* Mantener los bordes pero sin color */
     border-radius: 45px; /* Esquinas redondeadas a 45px */
     padding: 40px;
-    /* box-shadow eliminado */
 }
 
-/* Lado izquierdo (Texto centrado) */
-.hero-left-rectangle .hero-text {
-    margin-bottom: 40px; /* Espacio inferior para el botón */
+/* Título "Contenido + iA" a 20px del borde superior */
+.hero-left-rectangle .hero-text h1 {
+    margin-top: 20px;
+    font-size: 2rem; /* Tamaño ajustable */
 }
 
-/* Posicionamiento del botón */
+/* Palabras: Innovación, Tecnología, Crecimiento */
+.hero-left-rectangle .keywords {
+    margin: 0 auto;
+    margin-bottom: 40px; /* Añadir un margen inferior */
+    font-size: 4rem; /* Aumentar el tamaño de la fuente 4 veces */
+}
+
+.hero-left-rectangle .keyword {
+    line-height: 1.2;
+}
+
+.hero-left-rectangle .keyword.highlighted {
+    color: #00AAFF; /* Cambiar color de Tecnología */
+}
+
+/* Botón a 10px del borde inferior */
 .hero-left-rectangle .btn {
-    background-color: var(--color-marron-rojizo);
-    color: var(--color-gris-oscuro); /* Cambiar el color del texto a gris oscuro */
+    background-color: var(--color-blanco); /* Fondo blanco desactivado */
+    color: var(--color-gris-oscuro); /* Texto gris oscuro */
     padding: 12px 30px;
     border: none;
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    margin-bottom: 10px; /* Espacio de 10px del borde inferior */
     text-decoration: none;
-    margin-top: 20px; /* Espacio arriba del botón */
+    background-image: none; /* Imagen de fondo desactivada */
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Botón Hover */
+/* Botón hover con imagen de fondo */
 .hero-left-rectangle .btn:hover {
-    background-color: var(--color-marron-rojizo-hover);
-    color: var(--color-blanco);
-}
-
-/* Rectángulo derecho independiente sin color en los bordes y esquinas redondeadas */
-.hero-right-rectangle {
-    width: 50%; /* Mantener el tamaño del rectángulo derecho */
-    height: 70vh; /* Mantener la altura coherente */
-    background-image: url('assets/imagen1.jpg'); /* Imagen de fondo */
+    background-image: url('assets/fondo2.png'); /* Fondo con imagen cuando se activa */
     background-size: cover;
-    background-position: center;
-    position: relative;
-    right: 0; /* Alinear al borde derecho */
-    display: flex;
-    align-items: flex-end; /* Alinear la palabra "Evolución" cerca del borde inferior */
-    justify-content: center;
-    padding-bottom: 20px; /* Margen inferior para el texto */
-    border: 2px solid transparent; /* Mantener los bordes pero sin color */
-    border-radius: 45px; /* Esquinas redondeadas a 45px */
-    box-shadow: -5px 0 15px rgba(0,0,0,0.1); /* Sombra sutil */
-}
-
-/* Estilos del texto "Evolución" */
-.hero-right-rectangle .evolucion-text {
-    font-size: 2.5rem;
-    color: var(--color-blanco);
-    text-align: center;
+    color: var(--color-marron-rojizo-hover); /* Color de texto cuando se activa */
 }
 
 
