@@ -200,7 +200,7 @@ header {
 /* Contenedor para las frases de desplazamiento */
 .moving-text-container {
     position: absolute;
-    bottom: 30; /* Colocarlo al final de la sección hero */
+    bottom: 50px; /* Colocarlo al final de la sección hero */
     width: 100%; /* Ocupa todo el ancho */
     display: flex;
     justify-content: space-between;
