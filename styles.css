@@ -209,7 +209,7 @@ header {
     font-size: 1.5rem; /* Tamaño pequeño pero legible */
     font-weight: 600; /* Grosor ligero para el texto */
     color: #af73c9;
-    animation: moveText 25s linear infinite; /* Ambas frases tendrán la misma duración */
+    animation: moveText 28s linear infinite; /* Ambas frases tendrán la misma duración */
     opacity: 0; /* Ocultamos la frase inicialmente para hacer una transición suave */
 }
 
@@ -229,7 +229,7 @@ header {
         opacity: 1;
     }
     100% {
-        transform: translateX(-150%); /* Sale de la pantalla por la izquierda */
+        transform: translateX(-180%); /* Sale de la pantalla por la izquierda */
         opacity: 0; /* Desvanece la frase para evitar el corte */
     }
 }
