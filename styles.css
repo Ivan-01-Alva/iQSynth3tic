@@ -196,7 +196,35 @@ header {
     text-align: center;
 }
 
+/* Contenedor para las frases de desplazamiento */
+.moving-text-container {
+    position: absolute;
+    bottom: 0; /* Colocarlo al final de la sección hero */
+    width: 100%; /* Ocupa todo el ancho */
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden; /* Ocultar el desbordamiento de las frases */
+    white-space: nowrap; /* Evitar que las frases se dividan en varias líneas */
+    padding: 10px 0;
+}
 
+/* Estilo para las frases */
+.moving-text {
+    font-size: 1rem; /* Tamaño pequeño pero legible */
+    font-weight: 300; /* Grosor ligero para el texto */
+    color: var(--color-azul-oscuro);
+    animation: moveText 15s linear infinite; /* Animación para mover el texto */
+}
+
+/* Animación para que las frases se desplacen */
+@keyframes moveText {
+    0% {
+        transform: translateX(100%); /* Comienza fuera de la pantalla */
+    }
+    100% {
+        transform: translateX(-100%); /* Termina fuera de la pantalla en el lado izquierdo */
+    }
+}
 
 /* Sección de Servicios */
 .services {
