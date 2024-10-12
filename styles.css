@@ -214,11 +214,11 @@ header {
     font-size: 1.3rem; /* Tamaño pequeño pero legible */
     font-weight: 500; /* Grosor ligero para el texto */
     color: var(--color-gris-oscuro);
-    animation: moveText 25s linear infinite; /* Animación para mover el texto */
+    animation: moveText 20s linear infinite; /* Animación para mover el texto */
 }
 
 .moving-text:nth-child(2) {
-    animation-delay: 15s;
+    animation-delay: 10s;
 }
 
 /* Animación para que las frases se desplacen */
