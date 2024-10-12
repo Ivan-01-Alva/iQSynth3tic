@@ -57,7 +57,7 @@ header {
 }
 
 .company-name {
-    color: var(--color-gris-oscuro);
+    color: #00AAFF;
     font-size: 1.5rem;
     font-weight: 700;
 }
