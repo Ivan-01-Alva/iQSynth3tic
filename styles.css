@@ -96,33 +96,34 @@ header {
     transition: 0.4s;
 }
 
-/* Sección Hero */
+/* Fondo de la Sección Hero */
 .hero {
-    background-color: var(--color-azul-oscuro);
+    background-color: var(--color-blanco); /* Fondo blanco fuera del rectángulo */
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 5%;
     position: relative;
-    color: var(--color-azul-oscuro);
 }
 
+/* Estilos del Contenedor del Rectángulo Flotante */
 .hero-content {
     background-color: var(--color-blanco);
-    padding: 0;
     display: flex;
-    align-items: center;
+    align-items: stretch; /* Estirar las dos mitades */
     justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
-    border-radius: 15px; /* Mantener esquinas redondeadas */
+    max-width: 1200px; /* Ancho coherente con la barra de navegación */
+    width: 110%;
+    height: 70vh; /* Ajustar la altura al 70% de la pantalla */
+    border-radius: 15px; /* Mantener las esquinas redondeadas */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Añadir una sombra suave */
     overflow: hidden;
 }
 
 /* Lado izquierdo (Texto) */
 .hero-left {
-    background-color: var(--color-blanco); /* Fondo blanco */
+    background-color: var(--color-blanco); /* Fondo blanco para el lado izquierdo */
     flex: 1;
     padding: 40px;
     display: flex;
@@ -131,50 +132,28 @@ header {
     text-align: center;
 }
 
-.hero-left .hero-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.hero-left .keywords {
-    margin-bottom: 20px;
-}
-
-.hero-left .keyword {
-    font-size: 2rem; /* Tamaño de fuente al doble */
-    line-height: 1.2;
-}
-
-.hero-left .keyword.highlighted {
-    color: var(--color-marron-rojizo); /* Color marrón rojizo */
-}
-
-.hero-left .frase-inspiradora {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.hero-left .hero-text p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-/* Lado derecho (Imagen y "Evolución") */
+/* Lado derecho (Imagen y 'Evolución') */
 .hero-right {
     flex: 1;
-    background-image: url('assets/fondo4.jpg'); /* Imagen de fondo */
+    background-image: url('assets/hero-image.webp'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-marron-rojizo); /* Color del texto "Evolución" */
+    color: var(--color-marron-rojizo);
+    position: relative;
 }
 
+/* Centrar el texto 'Evolución' en el lado derecho */
 .hero-right .evolucion-text {
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar vertical y horizontalmente */
 }
 
 /* Botón */
