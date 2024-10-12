@@ -163,6 +163,29 @@ header {
     color: var(--color-marron-rojizo-hover); /* Color de texto cuando se activa */
 }
 
+/* Rectángulo derecho con imagen de fondo y texto "Evolución" */
+.hero-right-rectangle {
+    width: 50%; /* Tamaño ajustable */
+    height: 70vh; /* Ajustar la altura del rectángulo */
+    background-image: url('assets/imagen1.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end; /* Alinear el texto "Evolución" cerca del borde inferior */
+    justify-content: center;
+    padding-bottom: 20px;
+    border: 2px solid transparent; /* Sin bordes visibles */
+    border-radius: 45px; /* Bordes redondeados */
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+/* Texto "Evolución" en el rectángulo derecho */
+.hero-right-rectangle .evolucion-text {
+    font-size: 2.5rem;
+    color: var(--color-marron-rojizo);
+    text-align: center;
+}
+
 
 
 /* Sección de Servicios */
