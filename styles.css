@@ -1,4 +1,4 @@
-/* Variables de Color */
+er/* Variables de Color */
 :root {
     --color-azul-oscuro: #090c1b;
     --color-marron-rojizo: #ad6d65;
@@ -129,11 +129,12 @@ header {
 
 /* Palabras: Innovación, Tecnología, Crecimiento, centradas y con desfase en Tecnología */
 .hero-left-rectangle .keywords {
-    margin: 0 auto;
+    margin: center;
     font-size: 4rem; /* Aumentar el tamaño de la fuente 4 veces */
     display: flex;
     flex-direction: column;
     align-items: center; /* Centrar las palabras en el rectángulo */
+    margin-right: 30px; /* Mover Tecnología ligeramente a la izquierda */
 }
 
 .hero-left-rectangle .keyword {
@@ -143,7 +144,7 @@ header {
 /* Desfase en la palabra "Tecnología" */
 .hero-left-rectangle .keyword.highlighted {
     color: #00AAFF; /* Cambiar color de Tecnología */
-    margin-left: 30px; /* Mover Tecnología ligeramente a la derecha */
+    margin-left: 60px; /* Mover Tecnología ligeramente a la derecha */
 }
 
 /* Botón más cerca del borde inferior */
