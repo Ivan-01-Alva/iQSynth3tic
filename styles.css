@@ -118,7 +118,6 @@ header {
     border: 2px solid transparent; /* Mantener los bordes pero sin color */
     border-radius: 45px; /* Esquinas redondeadas a 45px */
     padding: 40px;
-    border: 2px solid var(--color-gris-oscuro);
 }
 
 /* Título "Contenido + iA" a 20px del borde superior */
