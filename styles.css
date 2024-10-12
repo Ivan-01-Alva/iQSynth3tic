@@ -113,12 +113,12 @@ header {
     height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alinea los elementos al inicio */
+    position: relative; /* Para que el botón absoluto se coloque correctamente */
     text-align: center;
     border: 2px solid transparent;
     border-radius: 45px;
     padding: 40px;
-    padding-bottom: 20px; /* Añadir un poco de padding inferior */
+    padding-bottom: 80px; /* Espacio para que el botón no se solape con el contenido */
 }
 
 .hero-left-rectangle .hero-text h1 {
@@ -155,8 +155,10 @@ header {
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: auto; /* Esto empuja el botón hacia el borde inferior */
-    margin-bottom: 10px; /* Añadir un margen pequeño al borde */
+    position: absolute; /* Fijamos el botón en la parte inferior */
+    bottom: 20px; /* Asegura que esté cerca del borde inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el botón horizontalmente */
     text-decoration: none;
     background-image: none;
     transition: background-color 0.3s, color 0.3s;
