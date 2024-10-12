@@ -96,64 +96,37 @@ header {
     transition: 0.4s;
 }
 
-/* Fondo de la Sección Hero */
+/* Fondo general de la Sección Hero */
 .hero {
-    background-color: var(--color-blanco); /* Fondo blanco fuera del rectángulo */
+    background-color: var(--color-blanco); /* Fondo blanco */
     min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0 5%;
     position: relative;
 }
 
-/* Estilos del Contenedor del Rectángulo Flotante */
-.hero-content {
-    background-color: var(--color-blanco);
-    display: flex;
-    align-items: stretch; /* Estirar las dos mitades */
-    justify-content: space-between;
-    max-width: 1200px; /* Ancho coherente con la barra de navegación */
-    width: 110%;
-    height: 70vh; /* Ajustar la altura al 70% de la pantalla */
-    border-radius: 15px; /* Mantener las esquinas redondeadas */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Añadir una sombra suave */
-    overflow: hidden;
-}
-
-/* Lado izquierdo (Texto) */
+/* Lado izquierdo (Texto centrado sin rectángulo) */
 .hero-left {
-    background-color: var(--color-blanco); /* Fondo blanco para el lado izquierdo */
     flex: 1;
-    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-}
-
-/* Lado derecho (Imagen y 'Evolución') */
-.hero-right {
-    flex: 1;
-    background-image: url('assets/imagen1.jpg'); /* Imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-marron-rojizo);
     position: relative;
 }
 
-/* Centrar el texto 'Evolución' en el lado derecho */
-.hero-right .evolucion-text {
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
+/* Estilos del texto en la parte izquierda */
+.hero-left .hero-text {
+    margin-bottom: 40px; /* Espacio inferior para el botón */
+}
+
+/* Posicionamiento del botón en la parte inferior izquierda */
+.hero-button {
     position: absolute;
-    top: 50%;
+    bottom: 40px; /* Ajuste de la distancia desde la parte inferior */
     left: 50%;
-    transform: translate(-50%, -50%); /* Centrar vertical y horizontalmente */
+    transform: translateX(-50%); /* Centrar el botón horizontalmente */
 }
 
 /* Botón */
@@ -172,6 +145,29 @@ header {
 .btn:hover {
     background-color: var(--color-marron-rojizo-hover);
     color: var(--color-blanco); /* Mantener blanco al hacer hover */
+}
+
+/* Rectángulo derecho independiente */
+.hero-right-rectangle {
+    width: 30%; /* Tamaño ajustable del rectángulo derecho */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-image: url('assets/imagen1.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: 0; /* Alinear al borde derecho de la pantalla */
+    display: flex;
+    align-items: flex-end; /* Alinear la palabra "Evolución" cerca del borde inferior */
+    justify-content: center;
+    padding-bottom: 20px; /* Margen inferior para el texto */
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1); /* Sombra sutil para darle dimensión */
+}
+
+/* Estilos del texto "Evolución" */
+.hero-right-rectangle .evolucion-text {
+    font-size: 2.5rem;
+    color: var(--color-marron-rojizo);
+    text-align: center;
 }
 
 
