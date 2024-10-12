@@ -98,95 +98,101 @@ header {
 
 /* Sección Hero */
 .hero {
-    background-color: var(--color-blanco);
+    background-color: var(--color-azul-oscuro);
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 5%;
     position: relative;
-    color: var(--color-gris-oscuro);
-    box-sizing: border-box;
+    color: var(--color-azul-oscuro);
 }
 
 .hero-content {
     background-color: var(--color-blanco);
-    background-image: url('assets/fondo4.jpg'); /* Imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para que se vea completa */
-    background-position: center; /* Centra la imagen de fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    min-height: 850px; /* Puedes cambiarlo a 500px si lo prefieres */
-    padding: 40px;
-    border: 1px solid var(--color-gris-oscuro);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    padding: 0;
     display: flex;
-    align-items: center; /* Centra el contenido verticalmente */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    text-align: center; /* Centra el texto horizontalmente */
-    max-width: 100%; /* Ajustamos el ancho a 90% */
-    margin: 100px auto; /* Centramos el contenedor horizontalmente */
-    width: 100%; /* Aseguramos que el ancho sea coherente con la barra de navegación */
-    border-radius: 45px;
-    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 15px; /* Mantener esquinas redondeadas */
+    overflow: hidden;
 }
 
-
-.hero-text {
-    margin: 0; /* Elimina el margen innecesario ahora que el texto está centrado */
+/* Lado izquierdo (Texto) */
+.hero-left {
+    background-color: var(--color-blanco); /* Fondo blanco */
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
-.hero-text h1 {
+.hero-left .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-left .keywords {
+    margin-bottom: 20px;
+}
+
+.hero-left .keyword {
+    font-size: 2rem; /* Tamaño de fuente al doble */
+    line-height: 1.2;
+}
+
+.hero-left .keyword.highlighted {
+    color: var(--color-marron-rojizo); /* Color marrón rojizo */
+}
+
+.hero-left .frase-inspiradora {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-left .hero-text p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Lado derecho (Imagen y "Evolución") */
+.hero-right {
+    flex: 1;
+    background-image: url('assets/fondo4.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-marron-rojizo); /* Color del texto "Evolución" */
+}
+
+.hero-right .evolucion-text {
     font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.keywords {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-}
-
-.keyword {
-    font-size: 1.3rem;
-    line-height: 2;
-}
-
-.keyword.highlighted {
-    font-size: 5rem;
-    color: var(--color-marron-rojizo);
-}
-
-.frase-inspiradora {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
 }
 
 /* Botón */
-.hero .btn {
-    position: absolute; /* Posiciona el botón absolutamente dentro de la sección Hero */
-    bottom: 20px; /* Lo coloca cerca del borde inferior */
-    left: 50%; /* Lo centra horizontalmente */
-    transform: translateX(-50%); /* Lo ajusta para centrarlo exactamente */
-    background-color: transparent; /* Fondo transparente */
-    color: var(--color-gris-claro); /* Texto del mismo color que el contorno */
+.btn {
+    background-color: var(--color-marron-rojizo);
+    color: var(--color-gris-oscuro); /* Cambiar el color del texto a gris oscuro */
     padding: 12px 30px;
-    border: 2px solid var(--color-marron-rojizo); /* Contorno con el mismo color */
-    border-radius: 50px; /* Bordes redondeados */
-    font-size: 1.3rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: all 0.3s; /* Transición para el hover */
+    transition: background-color 0.3s;
     text-decoration: none;
-    box-shadow: 0 10px 25px rgba(173, 109, 101, 0.5); /* Sombra pronunciada con el mismo color */
 }
 
-.hero .btn:hover {
-    background-color: var(--color-marron-rojizo); /* Fondo al pasar el mouse */
-    color: var(--color-gris-oscuro); /* Cambia el color del texto en hover */
-    box-shadow: 0 6px 12px rgba(173, 109, 101, 0.7); /* Sombra más pronunciada en hover */
+.btn:hover {
+    background-color: var(--color-marron-rojizo-hover);
+    color: var(--color-blanco); /* Mantener blanco al hacer hover */
 }
 
 
