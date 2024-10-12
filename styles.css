@@ -113,44 +113,39 @@ header {
     height: 70vh; /* Ajustar la altura del rectángulo */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Para que los elementos se ajusten a los bordes */
+    justify-content: center; /* Centrar contenido */
     text-align: center;
     border: 2px solid transparent; /* Mantener los bordes pero sin color */
     border-radius: 45px; /* Esquinas redondeadas a 45px */
     padding: 40px;
 }
 
-/* Título "Contenido + iA" a 20px del borde superior */
+/* Título "Contenido + iA" */
 .hero-left-rectangle .hero-text h1 {
     margin-top: 20px;
-    font-size: 1.5rem; /* Tamaño ajustable */
+    font-size: 2rem;
+    margin-bottom: 50px; /* Añadir más espacio debajo del título */
 }
 
 /* Palabras: Innovación, Tecnología, Crecimiento */
 .hero-left-rectangle .keywords {
     margin: 0 auto;
-    margin-bottom: 40px; /* Añadir un margen inferior */
     font-size: 4rem; /* Aumentar el tamaño de la fuente 4 veces */
-}
-
-.hero-left-rectangle .keyword {
     line-height: 1.2;
+    margin-bottom: 40px; /* Añadir espacio inferior si es necesario */
 }
 
-.hero-left-rectangle .keyword.highlighted {
-    color: #00AAFF; /* Cambiar color de Tecnología */
-}
-
-/* Botón a 10px del borde inferior */
+/* Botón más abajo, centrado y con contorno gris oscuro */
 .hero-left-rectangle .btn {
     background-color: var(--color-blanco); /* Fondo blanco desactivado */
     color: var(--color-gris-oscuro); /* Texto gris oscuro */
     padding: 12px 30px;
-    border: none;
+    border: 2px solid var(--color-gris-oscuro); /* Contorno gris oscuro */
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    margin-bottom: 10px; /* Espacio de 10px del borde inferior */
+    margin-top: auto; /* Mover el botón al final */
+    margin-bottom: 20px; /* Separar el botón del borde inferior */
     text-decoration: none;
     background-image: none; /* Imagen de fondo desactivada */
     transition: background-color 0.3s, color 0.3s;
@@ -182,10 +177,9 @@ header {
 /* Texto "Evolución" en el rectángulo derecho */
 .hero-right-rectangle .evolucion-text {
     font-size: 2.5rem;
-    color: var(--color-blanco);
+    color: var(--color-marron-rojizo);
     text-align: center;
 }
-
 
 
 /* Sección de Servicios */
