@@ -127,22 +127,26 @@ header {
     font-size: 2rem; /* Tamaño ajustable */
 }
 
-/* Palabras: Innovación, Tecnología, Crecimiento */
+/* Palabras: Innovación, Tecnología, Crecimiento, centradas y con desfase en Tecnología */
 .hero-left-rectangle .keywords {
     margin: 0 auto;
-    margin-bottom: 40px; /* Añadir un margen inferior */
     font-size: 4rem; /* Aumentar el tamaño de la fuente 4 veces */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar las palabras en el rectángulo */
 }
 
 .hero-left-rectangle .keyword {
     line-height: 1.2;
 }
 
+/* Desfase en la palabra "Tecnología" */
 .hero-left-rectangle .keyword.highlighted {
     color: #00AAFF; /* Cambiar color de Tecnología */
+    margin-left: 30px; /* Mover Tecnología ligeramente a la derecha */
 }
 
-/* Botón a 10px del borde inferior */
+/* Botón más cerca del borde inferior */
 .hero-left-rectangle .btn {
     background-color: var(--color-blanco); /* Fondo blanco desactivado */
     color: var(--color-gris-oscuro); /* Texto gris oscuro */
@@ -151,10 +155,13 @@ header {
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    margin-bottom: 10px; /* Espacio de 10px del borde inferior */
+    margin-top: auto;
+    margin-bottom: 5px; /* Mover el botón más cerca del borde inferior */
     text-decoration: none;
     background-image: none; /* Imagen de fondo desactivada */
     transition: background-color 0.3s, color 0.3s;
+}
+
 }
 
 /* Botón hover con imagen de fondo */
