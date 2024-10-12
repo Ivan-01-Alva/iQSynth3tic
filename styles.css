@@ -220,10 +220,10 @@ header {
 /* Animación para que las frases se desplacen */
 @keyframes moveText {
     0% {
-        transform: translateX(100%); /* Comienza fuera de la pantalla */
+        transform: translateX(150%); /* Comienza fuera de la pantalla */
     }
     100% {
-        transform: translateX(-100%); /* Termina fuera de la pantalla en el lado izquierdo */
+        transform: translateX(-150%); /* Termina fuera de la pantalla en el lado izquierdo */
     }
 }
 
