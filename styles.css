@@ -106,31 +106,25 @@ header {
     position: relative;
 }
 
-/* Lado izquierdo (Texto centrado sin rectángulo) */
-.hero-left {
-    flex: 1;
+/* Rectángulo Izquierdo (Sin color en los bordes exteriores) */
+.hero-left-rectangle {
+    width: 50%; /* Mantener un tamaño similar al del lado derecho */
+    height: 70vh; /* Ajustar la altura del rectángulo */
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    position: relative;
+    border: none; /* Sin bordes exteriores */
+    padding: 40px;
 }
 
-/* Estilos del texto en la parte izquierda */
-.hero-left .hero-text {
+/* Lado izquierdo (Texto centrado) */
+.hero-left-rectangle .hero-text {
     margin-bottom: 40px; /* Espacio inferior para el botón */
 }
 
-/* Posicionamiento del botón en la parte inferior izquierda */
-.hero-button {
-    position: absolute;
-    bottom: 40px; /* Ajuste de la distancia desde la parte inferior */
-    left: 50%;
-    transform: translateX(-50%); /* Centrar el botón horizontalmente */
-}
-
-/* Botón */
-.btn {
+/* Posicionamiento del botón */
+.hero-left-rectangle .btn {
     background-color: var(--color-marron-rojizo);
     color: var(--color-gris-oscuro); /* Cambiar el color del texto a gris oscuro */
     padding: 12px 30px;
@@ -140,22 +134,24 @@ header {
     cursor: pointer;
     transition: background-color 0.3s;
     text-decoration: none;
+    margin-top: 20px; /* Espacio arriba del botón */
 }
 
-.btn:hover {
+/* Botón Hover */
+.hero-left-rectangle .btn:hover {
     background-color: var(--color-marron-rojizo-hover);
-    color: var(--color-blanco); /* Mantener blanco al hacer hover */
+    color: var(--color-blanco);
 }
 
 /* Rectángulo derecho independiente */
 .hero-right-rectangle {
-    width: 30%; /* Tamaño ajustable del rectángulo derecho */
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    width: 50%; /* Mantener el tamaño del rectángulo derecho */
+    height: 70vh; /* Mantener la altura coherente */
     background-image: url('assets/imagen1.jpg'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
-    position: absolute;
-    right: 0; /* Alinear al borde derecho de la pantalla */
+    position: relative;
+    right: 0; /* Alinear al borde derecho */
     display: flex;
     align-items: flex-end; /* Alinear la palabra "Evolución" cerca del borde inferior */
     justify-content: center;
@@ -166,7 +162,7 @@ header {
 /* Estilos del texto "Evolución" */
 .hero-right-rectangle .evolucion-text {
     font-size: 2.5rem;
-    color: var(--color-blanco);
+    color: var(--color-marron-rojizo);
     text-align: center;
 }
 
