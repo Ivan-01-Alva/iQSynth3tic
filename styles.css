@@ -118,6 +118,7 @@ header {
     border: 2px solid transparent;
     border-radius: 45px;
     padding: 40px;
+    padding-bottom: 60px; /* Aumentamos el padding inferior */
 }
 
 .hero-left-rectangle .hero-text h1 {
@@ -152,8 +153,8 @@ header {
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: 40px; /* Ajuste del espacio */
-    margin-bottom: 15px;
+    margin-top: 60px; /* Aumentamos el margen superior para separar más el botón */
+    margin-bottom: 0px; /* Quitamos el margen inferior para acercarlo al borde */
     text-decoration: none;
     background-image: none;
     transition: background-color 0.3s, color 0.3s;
@@ -166,6 +167,7 @@ header {
     color: var(--color-blanco); /* Color de texto cuando se activa */
     border: none;
 }
+
 
 /* Rectángulo derecho con imagen de fondo y texto "Evolución" */
 .hero-right-rectangle {
