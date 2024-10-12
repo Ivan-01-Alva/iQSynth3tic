@@ -219,7 +219,7 @@ header {
 /* Animación para que las frases se desplacen */
 @keyframes moveText {
     0% {
-        transform: translateX(100%); /* Fuera de la pantalla por la derecha */
+        transform: translateX(150%); /* Fuera de la pantalla por la derecha */
         opacity: 1; /* Aparece suavemente */
     }
     50% {
@@ -227,7 +227,7 @@ header {
         opacity: 1;
     }
     100% {
-        transform: translateX(-100%); /* Sale de la pantalla por la izquierda */
+        transform: translateX(-150%); /* Sale de la pantalla por la izquierda */
         opacity: 0; /* Desvanece la frase para evitar el corte */
     }
 }
