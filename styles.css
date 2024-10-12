@@ -26,15 +26,15 @@ body {
 
 /* Barra de Navegación */
 header {
-    width: 88%; /* Ajusta el ancho para que esté separado de los laterales */
+    width: 88%;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.60); /* Color blanco con 60% de transparencia */
+    background-color: rgba(255, 255, 255, 0.60);
     z-index: 1000;
-    top: 20px; /* Separa la barra de la parte superior */
-    left: 50%; /* Centramos la barra horizontalmente */
-    transform: translateX(-50%); /* Corregimos la posición para centrarla */
-    border-radius: 50px; /* Redondeamos las esquinas para crear la forma de medio círculo */
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1); /* Añadimos una sombra para darle un efecto flotante */
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -44,195 +44,104 @@ header {
     padding: 4px 3%;
 }
 
-.logo a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.logo-img {
-    height: 40px;
-    width: auto;
-    margin-right: 10px;
-}
-
-.company-name {
-    color: #00AAFF;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    font-size: 1.1rem;
-    color: var(--color-gris-oscuro);
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: var(--color-marron-rojizo);
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-}
-
-.hamburger .bar {
-    width: 20px;
-    height: 3px;
-    background-color: var(--color-blanco);
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
 /* Fondo general de la Sección Hero */
 .hero {
-    background-color: var(--color-blanco); /* Fondo blanco */
+    background-color: var(--color-blanco);
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
-    padding: 100px 5%; /* Margen superior para despejar la barra de navegación */
-    gap: 20px; /* Espacio entre los rectángulos */
+    padding: 100px 5%;
+    gap: 20px;
     position: relative;
 }
 
-/* Rectángulo Izquierdo sin color en los bordes y esquinas redondeadas */
+/* Rectángulo Izquierdo */
 .hero-left-rectangle {
-    width: 50%; /* Mantener un tamaño similar al del lado derecho */
-    height: 70vh; /* Ajustar la altura del rectángulo */
+    width: 50%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Para que los elementos se ajusten a los bordes */
+    justify-content: space-between;
     text-align: center;
-    border: 2px solid transparent; /* Mantener los bordes pero sin color */
-    border-radius: 45px; /* Esquinas redondeadas a 45px */
+    border: 2px solid transparent;
+    border-radius: 45px;
     padding: 40px;
 }
 
-/* Título "Contenido + iA" a 20px del borde superior */
-.hero-left-rectangle .hero-text h1 {
-    margin-top: 20px;
-    font-size: 1.2rem; /* Tamaño ajustable */
-}
-
-/* Título "Contenido + iA" con más espacio */
 .hero-left-rectangle .hero-text h1 {
     margin-top: 20px;
     font-size: 2rem;
-    font-weight: 200; /* Aligerar el grosor de las letras */
-    margin-bottom: 80px; /* Añadir más espacio debajo del título */
+    font-weight: 200;
+    margin-bottom: 80px;
 }
 
-/* Palabras: Innovación, Tecnología, Crecimiento centradas */
 .hero-left-rectangle .keywords {
     margin: 0 auto;
-    font-size: 4rem; /* Tamaño de las palabras clave */
+    font-size: 4rem;
     line-height: 1.2;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrar verticalmente */
-    height: 100%; /* Ocupa todo el rectángulo */
+    justify-content: center;
+    height: 100%;
 }
 
 .hero-left-rectangle .keyword.highlighted {
-    color: #00AAFF; /* Cambiar color de Tecnología */
-    margin-left: 20%; /* Asegurarse que Tecnología esté centrada */
+    color: #00AAFF;
+    margin-left: 0;
+    text-align: center;
 }
 
-/* Botón a la parte inferior */
+/* Botón */
 .hero-left-rectangle .btn {
-    background-color: var(--color-blanco); /* Fondo blanco desactivado */
-    color: #00AAFF; /* Texto azul */
+    background-color: var(--color-blanco);
+    color: #00AAFF;
     padding: 12px 30px;
     border: 2px solid var(--color-gris-oscuro);
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: 40px;
-    margin-bottom: 15px; /* Asegurar espacio desde el borde inferior */
+    margin-top: 40px; /* Ajuste del espacio */
+    margin-bottom: 15px;
     text-decoration: none;
-    background-image: none; /* Imagen de fondo desactivada */
+    background-image: none;
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Botón hover con imagen de fondo */
-.hero-left-rectangle .btn:hover {
-    background-image: url('assets/fondo2.png'); /* Fondo con imagen cuando se activa */
-    background-size: cover;
-    color: var(--color-blanco); /* Color de texto cuando se activa */
-    border: none;
-}
-
-/* Rectángulo derecho con imagen de fondo y texto "Evolución" */
-.hero-right-rectangle {
-    width: 50%; /* Tamaño ajustable */
-    height: 70vh; /* Ajustar la altura del rectángulo */
-    background-image: url('assets/imagen1.jpg'); /* Imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end; /* Alinear el texto "Evolución" cerca del borde inferior */
-    justify-content: center;
-    padding-bottom: 20px;
-    border: none; /* Sin bordes visibles */
-    border-radius: 45px; /* Bordes redondeados */
-    box-shadow: -5px 0 15px rgba(0,0,0,0.1); /* Sombra sutil */
-}
-
-/* Texto "Evolución" en el rectángulo derecho */
-.hero-right-rectangle .evolucion-text {
-    font-size: 1.8rem;
-    color: var(--color-blanco);
-    text-align: center;
-}
-
-/* Contenedor para las frases de desplazamiento */
+/* Texto en movimiento */
 .moving-text-container {
     position: absolute;
-    bottom: 50px; /* Colocarlo al final de la sección hero */
-    width: 100%; /* Ocupa todo el ancho */
+    bottom: 50px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    overflow: hidden; /* Ocultar el desbordamiento de las frases */
-    white-space: nowrap; /* Evitar que las frases se dividan en varias líneas */
+    overflow: hidden;
+    white-space: nowrap;
     padding: 10px 0;
 }
 
-/* Estilo para las frases */
 .moving-text {
-    font-size: 1.3rem; /* Tamaño pequeño pero legible */
-    font-weight: 500; /* Grosor ligero para el texto */
+    font-size: 1.3rem;
+    font-weight: 500;
     color: var(--color-gris-oscuro);
-    animation: moveText 20s linear infinite; /* Animación para mover el texto */
+    animation: moveText 30s linear infinite;
 }
 
 .moving-text:nth-child(2) {
-    animation-delay: 10s;
+    animation-delay: 15s;
 }
 
-/* Animación para que las frases se desplacen */
 @keyframes moveText {
     0% {
-        transform: translateX(100%); /* Comienza completamente fuera de la pantalla */
+        transform: translateX(100%);
     }
     50% {
-        transform: translateX(0); /* La frase está completamente visible */
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%); /* Termina fuera de la pantalla por el lado izquierdo */
+        transform: translateX(-100%);
     }
 }
+
 
 /* Sección de Servicios */
 .services {
