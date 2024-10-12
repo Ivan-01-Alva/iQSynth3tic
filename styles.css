@@ -130,7 +130,7 @@ header {
 .hero-left-rectangle .hero-text h1 {
     margin-top: 20px;
     font-size: 2rem;
-    font-weight: 100; /* Aligerar el grosor de las letras */
+    font-weight: 200; /* Aligerar el grosor de las letras */
     margin-bottom: 80px; /* Añadir más espacio debajo del título */
 }
 
