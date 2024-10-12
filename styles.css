@@ -107,7 +107,7 @@ header {
     position: relative;
 }
 
-/* Rectángulo Izquierdo con bordes blancos y esquinas redondeadas */
+/* Rectángulo Izquierdo sin color en los bordes y esquinas redondeadas */
 .hero-left-rectangle {
     width: 50%; /* Mantener un tamaño similar al del lado derecho */
     height: 70vh; /* Ajustar la altura del rectángulo */
@@ -115,8 +115,8 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border: 2px solid var(--color-blanco); /* Cambiar a borde blanco */
-    border-radius: 25%; /* Bordes redondeados */
+    border: 2px solid transparent; /* Mantener los bordes pero sin color */
+    border-radius: 45px; /* Esquinas redondeadas a 45px */
     padding: 40px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra sutil */
 }
@@ -146,7 +146,7 @@ header {
     color: var(--color-blanco);
 }
 
-/* Rectángulo derecho independiente con bordes blancos y esquinas redondeadas */
+/* Rectángulo derecho independiente sin color en los bordes y esquinas redondeadas */
 .hero-right-rectangle {
     width: 50%; /* Mantener el tamaño del rectángulo derecho */
     height: 70vh; /* Mantener la altura coherente */
@@ -159,8 +159,8 @@ header {
     align-items: flex-end; /* Alinear la palabra "Evolución" cerca del borde inferior */
     justify-content: center;
     padding-bottom: 20px; /* Margen inferior para el texto */
-    border: 2px solid var(--color-blanco); /* Cambiar a borde blanco */
-    border-radius: 25%; /* Bordes redondeados */
+    border: 2px solid transparent; /* Mantener los bordes pero sin color */
+    border-radius: 45px; /* Esquinas redondeadas a 45px */
     box-shadow: -5px 0 15px rgba(0,0,0,0.1); /* Sombra sutil */
 }
 
@@ -170,6 +170,7 @@ header {
     color: var(--color-marron-rojizo);
     text-align: center;
 }
+
 
 
 /* Sección de Servicios */
