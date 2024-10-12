@@ -207,7 +207,7 @@ header {
     font-size: 1.3rem; /* Tamaño pequeño pero legible */
     font-weight: 500; /* Grosor ligero para el texto */
     color: #af73c9;
-    animation: moveText 30s linear infinite; /* Ambas frases tendrán la misma duración */
+    animation: moveText 25s linear infinite; /* Ambas frases tendrán la misma duración */
     opacity: 0; /* Ocultamos la frase inicialmente para hacer una transición suave */
 }
 
