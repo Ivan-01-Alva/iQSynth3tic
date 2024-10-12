@@ -19,22 +19,22 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Manrope', sans-serif;
     color: var(--color-azul-oscuro);
     background-color: var(--color-blanco);
 }
 
 /* Barra de Navegación */
 header {
-    width: 88%; /* Ajusta el ancho para que esté separado de los laterales */
+    width: 88%;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.60); /* Color blanco con 60% de transparencia */
+    background-color: rgba(255, 255, 255, 0.60);
     z-index: 1000;
-    top: 20px; /* Separa la barra de la parte superior */
-    left: 50%; /* Centramos la barra horizontalmente */
-    transform: translateX(-50%); /* Corregimos la posición para centrarla */
-    border-radius: 50px; /* Redondeamos las esquinas para crear la forma de medio círculo */
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1); /* Añadimos una sombra para darle un efecto flotante */
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -42,58 +42,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 4px 3%;
-}
-
-.logo a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.logo-img {
-    height: 40px;
-    width: auto;
-    margin-right: 10px;
-}
-
-.company-name {
-    color: var(--color-gris-oscuro);
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    font-size: 1.1rem;
-    color: var(--color-gris-oscuro);
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: var(--color-marron-rojizo);
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-}
-
-.hamburger .bar {
-    width: 20px;
-    height: 3px;
-    background-color: var(--color-blanco);
-    margin: 4px 0;
-    transition: 0.4s;
 }
 
 /* Fondo general de la Sección Hero */
@@ -159,45 +107,69 @@ header {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Contenedor para las frases de desplazamiento */
+/* Botón hover con imagen de fondo */
+.hero-left-rectangle .btn:hover {
+    background-image: url('assets/fondo2.png'); /* Fondo con imagen cuando se activa */
+    background-size: cover;
+    color: var(--color-blanco); /* Color de texto cuando se activa */
+    border: none;
+}
+
+/* Rectángulo derecho con imagen de fondo y texto "Evolución" */
+.hero-right-rectangle {
+    width: 50%; /* Tamaño ajustable */
+    height: 70vh; /* Ajustar la altura del rectángulo */
+    background-image: url('assets/imagen1.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end; /* Alinear el texto "Evolución" cerca del borde inferior */
+    justify-content: center;
+    padding-bottom: 20px;
+    border: none; /* Sin bordes visibles */
+    border-radius: 45px; /* Bordes redondeados */
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+/* Texto "Evolución" en el rectángulo derecho */
+.hero-right-rectangle .evolucion-text {
+    font-size: 1.8rem;
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+/* Texto en movimiento */
 .moving-text-container {
     position: absolute;
-    bottom: 50px; /* Colocarlo al final de la sección hero */
-    width: 100%; /* Ocupa todo el ancho */
+    bottom: 50px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    overflow: hidden; /* Ocultar el desbordamiento de las frases */
-    white-space: nowrap; /* Evitar que las frases se dividan en varias líneas */
+    overflow: hidden;
+    white-space: nowrap;
     padding: 10px 0;
 }
 
-/* Estilo para las frases */
 .moving-text {
-    font-size: 1.3rem; /* Tamaño pequeño pero legible */
-    font-weight: 500; /* Grosor ligero para el texto */
+    font-size: 1.3rem;
+    font-weight: 500;
     color: var(--color-gris-oscuro);
-    animation: moveText 30s linear infinite; /* Ambas frases tendrán la misma duración */
-    opacity: 0; /* Ocultamos la frase inicialmente para hacer una transición suave */
+    animation: moveText 30s linear infinite;
 }
 
-/* Sincronización de la segunda frase */
 .moving-text:nth-child(2) {
-    animation-delay: 15s; /* La segunda frase comenzará 15s después de la primera */
+    animation-delay: 15s;
 }
 
-/* Animación para que las frases se desplacen */
 @keyframes moveText {
     0% {
-        transform: translateX(100%); /* Fuera de la pantalla por la derecha */
-        opacity: 1; /* Aparece suavemente */
+        transform: translateX(100%);
     }
     50% {
-        transform: translateX(0); /* Completamente visible en el centro */
-        opacity: 1;
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%); /* Sale de la pantalla por la izquierda */
-        opacity: 0; /* Desvanece la frase para evitar el corte */
+        transform: translateX(-100%);
     }
 }
 
