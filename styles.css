@@ -171,6 +171,7 @@ header {
     background-image: url('assets/fondo2.png'); /* Fondo con imagen cuando se activa */
     background-size: cover;
     color: var(--color-blanco); /* Color de texto cuando se activa */
+    border: none;
 }
 
 /* Rectángulo derecho con imagen de fondo y texto "Evolución" */
