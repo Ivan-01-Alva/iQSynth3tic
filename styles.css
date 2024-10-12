@@ -159,7 +159,7 @@ header {
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: auto;
+    margin-top: 40px;
     margin-bottom: 15px; /* Asegurar espacio desde el borde inferior */
     text-decoration: none;
     background-image: none; /* Imagen de fondo desactivada */
@@ -217,13 +217,20 @@ header {
     animation: moveText 25s linear infinite; /* Animación para mover el texto */
 }
 
+.moving-text:nth-child(2) {
+    animation-delay: 15s;
+}
+
 /* Animación para que las frases se desplacen */
 @keyframes moveText {
     0% {
-        transform: translateX(150%); /* Comienza fuera de la pantalla */
+        transform: translateX(100%); /* Comienza completamente fuera de la pantalla */
+    }
+    50% {
+        transform: translateX(0); /* La frase está completamente visible */
     }
     100% {
-        transform: translateX(-150%); /* Termina fuera de la pantalla en el lado izquierdo */
+        transform: translateX(-100%); /* Termina fuera de la pantalla por el lado izquierdo */
     }
 }
 
