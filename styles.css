@@ -214,7 +214,7 @@ header {
     font-size: 1.3rem; /* Tamaño pequeño pero legible */
     font-weight: 500; /* Grosor ligero para el texto */
     color: #00AAFF;
-    animation: moveText 15s linear infinite; /* Animación para mover el texto */
+    animation: moveText 30s linear infinite; /* Animación para mover el texto */
 }
 
 /* Animación para que las frases se desplacen */
