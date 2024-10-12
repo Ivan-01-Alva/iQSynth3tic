@@ -204,8 +204,8 @@ header {
 
 /* Estilo para las frases */
 .moving-text {
-    font-size: 1.3rem; /* Tamaño pequeño pero legible */
-    font-weight: 500; /* Grosor ligero para el texto */
+    font-size: 1.5rem; /* Tamaño pequeño pero legible */
+    font-weight: 600; /* Grosor ligero para el texto */
     color: #af73c9;
     animation: moveText 25s linear infinite; /* Ambas frases tendrán la misma duración */
     opacity: 0; /* Ocultamos la frase inicialmente para hacer una transición suave */
@@ -213,7 +213,7 @@ header {
 
 /* Sincronización de la segunda frase */
 .moving-text:nth-child(2) {
-    animation-delay: 10s; /* La segunda frase comenzará 15s después de la primera */
+    animation-delay: 7.5s; /* La segunda frase comenzará 15s después de la primera */
 }
 
 /* Animación para que las frases se desplacen */
