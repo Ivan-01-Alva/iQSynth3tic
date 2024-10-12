@@ -135,7 +135,7 @@ header {
 /* Lado derecho (Imagen y 'Evolución') */
 .hero-right {
     flex: 1;
-    background-image: url('assets/hero-image.webp'); /* Imagen de fondo */
+    background-image: url('assets/fondo5.jpg'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
     display: flex;
