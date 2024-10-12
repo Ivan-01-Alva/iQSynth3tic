@@ -137,6 +137,7 @@ header {
     flex-direction: column;
     justify-content: center;
     height: auto; /* Ajustamos para que solo ocupe el espacio necesario */
+    font-weight: 600;
 }
 
 .hero-left-rectangle .keyword.highlighted {
