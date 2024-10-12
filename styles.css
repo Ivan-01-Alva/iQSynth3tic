@@ -152,7 +152,7 @@ header {
 /* Botón a la parte inferior */
 .hero-left-rectangle .btn {
     background-color: var(--color-blanco); /* Fondo blanco desactivado */
-    color: #00AAFF; /* Texto gris oscuro */
+    color: #00AAFF; /* Texto azul */
     padding: 12px 30px;
     border: 2px solid var(--color-gris-oscuro);
     border-radius: 50px;
