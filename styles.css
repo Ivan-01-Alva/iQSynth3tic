@@ -199,7 +199,7 @@ header {
 /* Contenedor para las frases de desplazamiento */
 .moving-text-container {
     position: absolute;
-    bottom: 20px; /* Colocarlo al final de la sección hero */
+    margin-bottom: 15px; /* Colocarlo al final de la sección hero */
     width: 100%; /* Ocupa todo el ancho */
     display: flex;
     justify-content: space-between;
@@ -210,7 +210,7 @@ header {
 
 /* Estilo para las frases */
 .moving-text {
-    font-size: 1.5rem; /* Tamaño pequeño pero legible */
+    font-size: 1.3rem; /* Tamaño pequeño pero legible */
     font-weight: 500; /* Grosor ligero para el texto */
     color: #00AAFF;
     animation: moveText 15s linear infinite; /* Animación para mover el texto */
