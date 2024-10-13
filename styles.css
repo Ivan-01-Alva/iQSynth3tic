@@ -244,7 +244,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh; /* Mantener altura según la instrucción */
+    height: 30vh; /* Mantener altura según la instrucción */
     text-align: center;
     padding: 40px;
     position: relative;
