@@ -250,7 +250,7 @@ header {
     position: relative;
 }
 
-//* Rectángulo en la sección inter1 */
+/* Rectángulo en la sección inter1 */
 .inter-rectangle {
     background-color: #f0ebf5; /* Color de fondo del rectángulo */
     width: 95%; /* Cubre casi todo el ancho */
