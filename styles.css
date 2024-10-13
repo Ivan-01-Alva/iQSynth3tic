@@ -256,7 +256,7 @@ header {
 }
 
 .inter-text {
-    font-size: 4rem; /* Coincide con el tamaño de las palabras clave en la sección hero */
+    font-size: 3rem; /* Coincide con el tamaño de las palabras clave en la sección hero */
     color: var(--color-gris-oscuro);
     line-height: 1.2;
     font-weight: 600;
@@ -265,7 +265,7 @@ header {
 
 .inter-text .highlight {
     color: #00AAFF; /* Color azul para destacar "GPTs" */
-    font-size: 4.5rem; /* Un poco más grande que el resto del texto */
+    font-size: 4rem; /* Un poco más grande que el resto del texto */
 }
 
 /* Botón "Conócenos" en la sección intermedia */
