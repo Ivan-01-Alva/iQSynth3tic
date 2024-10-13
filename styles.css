@@ -257,7 +257,7 @@ header {
 
 .inter-text {
     font-size: 4rem; /* Coincide con el tamaño de las palabras clave en la sección hero */
-    color: var(--color-blanco);
+    color: var(--color-gris-oscuro);
     line-height: 1.2;
     font-weight: 600;
     margin-bottom: 40px; /* Espacio entre el texto y el botón */
