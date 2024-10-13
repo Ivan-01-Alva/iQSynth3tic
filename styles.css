@@ -251,7 +251,7 @@ header {
 
 /* Rectángulo en la sección inter1 */
 .inter-rectangle {
-    background-color: #dcd8f0; /* Color de fondo del rectángulo */
+    background-color: #d8cee0; /* Color de fondo del rectángulo */
     width: 100%; /* Cubre todo el ancho */
     height: 100%; /* Cubre todo el alto de la sección */
     border-radius: 45px; /* Bordes redondeados similares a la sección hero */
