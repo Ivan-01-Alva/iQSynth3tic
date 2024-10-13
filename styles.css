@@ -122,7 +122,7 @@ header {
 }
 
 .hero-left-rectangle .hero-text h1 {
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 6rem;
     font-weight: 300;
     margin-bottom: 80px;
@@ -156,7 +156,7 @@ header {
     font-size: 1rem;
     cursor: pointer;
     position: absolute; /* Fijamos el botón en la parte inferior */
-    bottom: 45px; /* Asegura que esté cerca del borde inferior */
+    bottom: 60px; /* Asegura que esté cerca del borde inferior */
     left: 50%;
     transform: translateX(-50%); /* Centra el botón horizontalmente */
     text-decoration: none;
