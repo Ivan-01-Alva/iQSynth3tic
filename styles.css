@@ -238,6 +238,18 @@ header {
     }
 }
 
+/* Fondo general de la Sección intermedia (inter1) */
+.intermediate {
+    background-color: var(--color-blanco); /* Fondo blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Mantener altura según la instrucción */
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+
 /* Rectángulo en la sección inter1 */
 .inter-rectangle {
     background-color: #f0ebf5; /* Color de fondo del rectángulo */
