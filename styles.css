@@ -7,6 +7,7 @@
     --color-gris-oscuro: #51434e;
     --color-beige-rosado: #d5ab95;
     --color-blanco: #ffffff;
+    #d8cee0
 }
 
 /* Importar Fuente */
@@ -237,18 +238,6 @@ header {
     }
 }
 
-/* Fondo general de la Sección intermedia (inter1) */
-.intermediate {
-    background-color: var(--color-blanco); /* Fondo blanco */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40vh; /* Mantener altura según la instrucción */
-    text-align: center;
-    padding: 40px;
-    position: relative;
-}
-
 /* Rectángulo en la sección inter1 */
 .inter-rectangle {
     background-color: #d8cee0; /* Color de fondo del rectángulo */
@@ -256,16 +245,20 @@ header {
     height: 100%; /* Cubre todo el alto de la sección */
     border-radius: 45px; /* Bordes redondeados similares a la sección hero */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    padding: 60px 20px; /* Espacio arriba y abajo dentro del rectángulo */
     position: relative;
-    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo del texto de la sección intermedia */
 .inter-content {
     width: 100%;
     max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .inter-text {
@@ -274,11 +267,6 @@ header {
     line-height: 1.2;
     font-weight: 600;
     margin-bottom: 40px; /* Espacio entre el texto y el botón */
-}
-
-.inter-text .highlight {
-    color: #00AAFF; /* Color azul para destacar "GPTs" */
-    font-size: 4rem; /* Un poco más grande que el resto del texto */
 }
 
 /* Botón "Conócenos" en la sección intermedia */
@@ -290,10 +278,8 @@ header {
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    position: absolute; /* Posicionamos el botón */
-    bottom: 20px; /* Entre el borde inferior de la sección y la frase */
-    left: 50%;
-    transform: translateX(-50%); /* Centra el botón */
+    margin-top: auto; /* Mantiene el botón alineado con el texto */
+    margin-bottom: 0px; /* Elimina cualquier margen inferior innecesario */
     text-decoration: none;
     background-image: none;
     transition: background-color 0.3s, color 0.3s;
