@@ -295,7 +295,7 @@ header {
     font-weight: 500; /* Grosor un poco más ligero que GPTs */
     color: var(--color-gris-oscuro); /* Color gris oscuro */
     text-align: center;
-    width: 33%; /* Ocupa el tercio derecho */
+    width: 50%; /* Ocupa el tercio derecho */
 }
 
 /* Botón "Conócenos" en la sección intermedia */
