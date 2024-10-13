@@ -239,11 +239,11 @@ header {
 
 /* Sección intermedia (inter1) */
 .intermediate {
-    background-color: #cdc7ed; /* Color de fondo */
+    background-color: #dcd8f0; /* Color de fondo */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh; /* Altura de la sección */
+    height: 40vh; /* Altura de la sección */
     text-align: center;
     position: relative; /* Necesario para posicionar el botón */
     padding: 40px;
