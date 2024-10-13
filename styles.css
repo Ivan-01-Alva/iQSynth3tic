@@ -102,7 +102,7 @@ header {
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
-    padding: 160px 5% 100px;
+    padding: 130px 5% 100px;
     gap: 20px;
     position: relative;
 }
