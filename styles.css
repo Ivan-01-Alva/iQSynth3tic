@@ -250,50 +250,52 @@ header {
     position: relative;
 }
 
-/* Rectángulo en la sección inter1 */
+//* Rectángulo en la sección inter1 */
 .inter-rectangle {
     background-color: #f0ebf5; /* Color de fondo del rectángulo */
-    width: 95%; /* Cubre todo el ancho */
+    width: 95%; /* Cubre casi todo el ancho */
     height: 100%; /* Cubre todo el alto de la sección */
     border-radius: 45px; /* Bordes redondeados similares a la sección hero */
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente el contenido */
-    align-items: center; /* Centra horizontalmente el contenido */
-    padding: 60px 20px; /* Espacio arriba y abajo dentro del rectángulo */
+    justify-content: center; /* Centra el contenido */
+    align-items: center;
+    padding: 60px 20px;
     position: relative;
 }
 
 /* Grupo de textos para la frase */
 .text-group {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px; /* Ancho máximo del grupo de texto */
-    align-items: center; /* Alineación vertical centrada */
-}
-
-/* Palabra GPTs alineada a la izquierda */
-.highlight {
-    color: #00AAFF; /* Color azul para destacar "GPTs" */
-    font-size: 3rem; /* Tamaño más grande para la palabra GPTs */
-    text-align: left;
-    flex: 1; /* Ocupa el espacio de la columna izquierda */
-}
-
-/* Símbolo 'x' centrado */
-.center-text {
-    font-size: 2.5rem; /* Tamaño ajustado para 'x' */
+    width: 100%; /* Cubre todo el ancho disponible */
+    justify-content: space-between; /* Espacia los elementos */
+    align-items: center;
     text-align: center;
-    flex: 0; /* Ocupa el espacio del centro */
+}
+
+/* Palabra GPTs centrada en la parte izquierda */
+.left-text {
+    font-size: 4rem; /* Tamaño grande, igual que las palabras clave */
+    font-weight: 600; /* Mismo grosor que las palabras clave */
+    color: #00AAFF; /* Color azul para destacar "GPTs" */
+    text-align: center;
+    width: 33%; /* Ocupa un tercio del ancho */
+}
+
+/* Símbolo 'x' centrado en todo el rectángulo */
+.center-text {
+    font-size: 3rem; /* Tamaño ligeramente más pequeño */
+    font-weight: 600; /* Mismo grosor */
+    text-align: center;
+    width: 34%; /* Ocupa el tercio central */
 }
 
 /* Texto alineado a la derecha */
 .right-text {
-    font-size: 2rem; /* Tamaño del resto del texto */
-    color: var(--color-gris-oscuro); /* Color del texto */
-    text-align: right;
-    flex: 2; /* Ocupa más espacio que el centro y se alinea a la derecha */
+    font-size: 2.5rem; /* Tamaño ajustado */
+    font-weight: 500; /* Grosor un poco más ligero que GPTs */
+    color: var(--color-gris-oscuro); /* Color gris oscuro */
+    text-align: center;
+    width: 33%; /* Ocupa el tercio derecho */
 }
 
 /* Botón "Conócenos" en la sección intermedia */
@@ -305,8 +307,7 @@ header {
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: auto; /* Mantiene el botón alineado con el texto */
-    margin-bottom: 0px; /* Elimina cualquier margen inferior innecesario */
+    margin-top: 40px; /* Margen superior para el botón */
     text-decoration: none;
     background-image: none;
     transition: background-color 0.3s, color 0.3s;
@@ -319,6 +320,7 @@ header {
     color: var(--color-blanco); /* Cambia el color del texto al blanco al hacer hover */
     border: none;
 }
+
 
 
 
