@@ -264,25 +264,36 @@ header {
     position: relative;
 }
 
-/* Estilo del texto de la sección intermedia */
-.inter-content {
-    width: 100%;
-    max-width: 1200px;
+/* Grupo de textos para la frase */
+.text-group {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo del grupo de texto */
+    align-items: center; /* Alineación vertical centrada */
 }
 
-.inter-text {
-    font-size: 2rem; /* Tamaño del texto */
-    color: var(--color-gris-oscuro); /* Texto en color gris oscuro */
-    line-height: 1.2;
-    font-weight: 600;
-    margin-bottom: 40px; /* Espacio entre el texto y el botón */
-}
-.inter-text .highlight {
+/* Palabra GPTs alineada a la izquierda */
+.highlight {
     color: #00AAFF; /* Color azul para destacar "GPTs" */
-    font-size: 3rem; /* Un poco más grande que el resto del texto */
+    font-size: 3rem; /* Tamaño más grande para la palabra GPTs */
+    text-align: left;
+    flex: 1; /* Ocupa el espacio de la columna izquierda */
+}
+
+/* Símbolo 'x' centrado */
+.center-text {
+    font-size: 2.5rem; /* Tamaño ajustado para 'x' */
+    text-align: center;
+    flex: 0; /* Ocupa el espacio del centro */
+}
+
+/* Texto alineado a la derecha */
+.right-text {
+    font-size: 2rem; /* Tamaño del resto del texto */
+    color: var(--color-gris-oscuro); /* Color del texto */
+    text-align: right;
+    flex: 2; /* Ocupa más espacio que el centro y se alinea a la derecha */
 }
 
 /* Botón "Conócenos" en la sección intermedia */
@@ -308,6 +319,7 @@ header {
     color: var(--color-blanco); /* Cambia el color del texto al blanco al hacer hover */
     border: none;
 }
+
 
 
 /* Sección de Servicios */
