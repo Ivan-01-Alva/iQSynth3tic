@@ -237,6 +237,62 @@ header {
     }
 }
 
+/* Sección intermedia (inter1) */
+.intermediate {
+    background-color: #cdc7ed; /* Color de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Altura de la sección */
+    text-align: center;
+    position: relative; /* Necesario para posicionar el botón */
+    padding: 40px;
+}
+
+/* Estilo del texto de la sección intermedia */
+.inter-content {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.inter-text {
+    font-size: 4rem; /* Coincide con el tamaño de las palabras clave en la sección hero */
+    color: var(--color-blanco);
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 40px; /* Espacio entre el texto y el botón */
+}
+
+.inter-text .highlight {
+    color: #00AAFF; /* Color azul para destacar "GPTs" */
+    font-size: 4.5rem; /* Un poco más grande que el resto del texto */
+}
+
+/* Botón "Conócenos" en la sección intermedia */
+.inter-content .btn {
+    background-color: var(--color-blanco);
+    color: #00AAFF;
+    padding: 12px 30px;
+    border: 2px solid var(--color-gris-oscuro);
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute; /* Posicionamos el botón */
+    bottom: 20px; /* Entre el borde inferior de la sección y la frase */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el botón */
+    text-decoration: none;
+    background-image: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efecto hover del botón "Conócenos" */
+.inter-content .btn:hover {
+    background-image: url('assets/fondo2.png'); /* Imagen de fondo al hacer hover */
+    background-size: cover;
+    color: var(--color-blanco); /* Cambia el color del texto al blanco al hacer hover */
+    border: none;
+}
 
 /* Sección de Servicios */
 .services {
