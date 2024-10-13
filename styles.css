@@ -278,7 +278,7 @@ header {
     font-weight: 600; /* Mismo grosor que las palabras clave */
     color: #00AAFF; /* Color azul para destacar "GPTs" */
     text-align: center;
-    width: 33%; /* Ocupa un tercio del ancho */
+    width: 10%; /* Ocupa un tercio del ancho */
 }
 
 /* Símbolo 'x' centrado en todo el rectángulo */
