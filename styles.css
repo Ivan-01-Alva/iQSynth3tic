@@ -257,74 +257,52 @@ header {
     height: 100%; /* Cubre todo el alto de la sección */
     border-radius: 45px; /* Bordes redondeados similares a la sección hero */
     display: flex;
-    justify-content: center; /* Centra verticalmente el contenido */
+    justify-content: space-between; /* Distribuye el contenido de manera uniforme */
     align-items: center;
-    padding: 60px 20px; /* Ajustamos el padding para tener más espacio arriba y abajo */
+    padding: 40px 20px; /* Ajuste de espacio arriba y abajo */
     position: relative;
 }
 
-/* Grupo de textos para la frase */
+/* Estilo para el grupo de textos */
 .text-group {
     display: flex;
-    justify-content: space-between; /* Distribuye los textos */
+    width: 100%; /* Usamos todo el ancho del rectángulo */
+    justify-content: space-between; /* Repartimos los textos a lo largo del rectángulo */
     align-items: center;
-    width: 100%; /* Ancho completo del rectángulo */
-    white-space: nowrap; /* Asegura que el texto no se divida en líneas */
-    margin-bottom: 40px; /* Ajuste para asegurar espacio suficiente con el botón */
 }
 
-/* Palabra GPTs centrada a la izquierda */
+/* GPTs más cerca del borde izquierdo */
 .left-text {
     font-size: 3rem; /* Tamaño ajustado para GPTs */
-    font-weight: 600; /* Grosor ajustado */
+    font-weight: 600;
     color: #00AAFF; /* Color azul */
     text-align: left;
-    flex: 1; /* Ocupa el espacio de la parte izquierda */
-    padding-left: 5px; /* Empuja la palabra GPTs más cerca del borde izquierdo */
+    flex: 1; /* Asegura que ocupe el espacio de la parte izquierda */
+    padding-left: 20px; /* Empuja la palabra GPTs más cerca del borde izquierdo */
+    margin-right: auto; /* Empuja el texto hacia el borde izquierdo */
 }
 
-/* Símbolo 'x' centrado en todo el rectángulo */
+/* Símbolo 'x +' centrado en el rectángulo */
 .center-text {
-    font-size: 2.5rem; /* Tamaño ajustado para 'x' */
-    font-weight: 600; /* Mismo grosor */
+    font-size: 2.5rem; /* Tamaño ajustado para 'x +' */
+    font-weight: 600;
     text-align: center;
-    flex: 0; /* Mantiene la 'x' centrada */
-    margin: 0 0px; /* Espacio lateral para la 'x' */
+    flex: 0; /* Asegura que la 'x +' esté centrada */
+    margin-left: auto; /* Asegura que quede justo al centro del rectángulo */
+    margin-right: auto; /* Para balancear ambos lados */
 }
 
 /* Texto alineado a la derecha */
 .right-text {
-    font-size: 2rem; /* Tamaño ajustado */
-    font-weight: 500; /* Grosor más ligero */
-    color: var(--color-gris-oscuro); /* Color gris oscuro */
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-gris-oscuro);
     text-align: right;
-    flex: 1; /* Asegura que ocupa el espacio de la parte derecha */
-    padding-right: 5px; /* Empuja el texto hacia el borde derecho */
-    white-space: nowrap; /* Evita que el texto se divida en líneas */
+    flex: 1; /* Ocupa el espacio en la parte derecha */
+    padding-right: 20px; /* Asegura que el texto esté alineado al borde derecho */
+    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
 }
 
-/* Botón "Conócenos" en la sección intermedia */
-.inter-content .btn {
-    background-color: var(--color-blanco);
-    color: #00AAFF;
-    padding: 12px 30px;
-    border: 2px solid var(--color-gris-oscuro);
-    border-radius: 50px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 40px; /* Suficiente espacio entre el botón y los textos */
-    text-decoration: none;
-    background-image: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Efecto hover del botón "Conócenos" */
-.inter-content .btn:hover {
-    background-image: url('assets/fondo2.png'); /* Imagen de fondo al hacer hover */
-    background-size: cover;
-    color: var(--color-blanco); /* Cambia el color del texto al blanco al hacer hover */
-    border: none;
-}
 
 
 /* Sección de Servicios */
