@@ -280,7 +280,7 @@ header {
     color: #00AAFF; /* Color azul */
     text-align: left;
     flex: 1; /* Ocupa el espacio de la parte izquierda */
-    padding-left: 20px; /* Empuja la palabra GPTs más cerca del borde izquierdo */
+    padding-left: 60px; /* Empuja la palabra GPTs más cerca del borde izquierdo */
 }
 
 /* Símbolo 'x' centrado en todo el rectángulo */
@@ -289,7 +289,7 @@ header {
     font-weight: 600; /* Mismo grosor */
     text-align: center;
     flex: 0; /* Mantiene la 'x' centrada */
-    margin: 0 30px; /* Espacio lateral para la 'x' */
+    margin: 0 0px; /* Espacio lateral para la 'x' */
 }
 
 /* Texto alineado a la derecha */
@@ -299,7 +299,7 @@ header {
     color: var(--color-gris-oscuro); /* Color gris oscuro */
     text-align: right;
     flex: 1; /* Asegura que ocupa el espacio de la parte derecha */
-    padding-right: 20px; /* Empuja el texto hacia el borde derecho */
+    padding-right: 60px; /* Empuja el texto hacia el borde derecho */
     white-space: nowrap; /* Evita que el texto se divida en líneas */
 }
 
