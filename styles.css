@@ -254,44 +254,43 @@ header {
 
 /* Rectángulo en la sección inter1 */
 .inter-rectangle {
-    background-color: #f0ebf5; /* Color de fondo del rectángulo */
-    width: 95%; /* Cubre casi todo el ancho */
-    height: 100%; /* Cubre todo el alto de la sección */
-    border-radius: 45px; /* Bordes redondeados similares a la sección hero */
+    background-color: #f0ebf5;
+    width: 95%;
+    height: 100%;
+    border-radius: 45px;
     display: flex;
-    justify-content: space-between; /* Distribuye el contenido de manera uniforme */
+    justify-content: center;
     align-items: center;
-    padding: 40px 20px; /* Ajuste de espacio arriba y abajo */
+    padding: 40px 20px;
     position: relative;
 }
 
 /* Estilo para el grupo de textos */
 .text-group {
     display: flex;
-    width: 100%; /* Usamos todo el ancho del rectángulo */
-    justify-content: space-between; /* Repartimos los textos a lo largo del rectángulo */
+    width: 100%;
+    justify-content: space-between; /* Asegura que los textos se distribuyan correctamente */
     align-items: center;
 }
 
-/* GPTs más cerca del borde izquierdo */
+/* GPTs más cerca del borde izquierdo pero con espacio */
 .left-text {
-    font-size: 3rem; /* Tamaño ajustado para GPTs */
+    font-size: 3rem;
     font-weight: 600;
-    color: #00AAFF; /* Color azul */
+    color: #00AAFF;
     text-align: left;
-    flex: 1; /* Asegura que ocupe el espacio de la parte izquierda */
-    padding-left: 20px; /* Empuja la palabra GPTs más cerca del borde izquierdo */
-    margin-right: auto; /* Empuja el texto hacia el borde izquierdo */
+    flex: 1;
+    padding-left: 40px; /* Aumenta el espacio entre el borde izquierdo y GPTs */
 }
 
-/* Símbolo 'x +' centrado en el rectángulo */
+/* Símbolo 'x +' completamente centrado en el rectángulo */
 .center-text {
-    font-size: 2.5rem; /* Tamaño ajustado para 'x +' */
+    font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
-    flex: 0; /* Asegura que la 'x +' esté centrada */
-    margin-left: auto; /* Asegura que quede justo al centro del rectángulo */
-    margin-right: auto; /* Para balancear ambos lados */
+    flex: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Texto alineado a la derecha */
@@ -300,12 +299,32 @@ header {
     font-weight: 500;
     color: var(--color-gris-oscuro);
     text-align: right;
-    flex: 1; /* Ocupa el espacio en la parte derecha */
-    padding-right: 20px; /* Asegura que el texto esté alineado al borde derecho */
-    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+    flex: 1;
+    padding-right: 40px; /* Se asegura que el texto esté más cerca del borde derecho */
 }
 
+/* Botón "Conócenos" debe estar centrado bajo el texto */
+.inter-content .btn {
+    background-color: var(--color-blanco);
+    color: #00AAFF;
+    padding: 12px 30px;
+    border: 2px solid var(--color-gris-oscuro);
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 40px; /* Asegura que esté más cerca del borde inferior del rectángulo */
+    text-decoration: none;
+    background-image: none;
+    transition: background-color 0.3s, color 0.3s;
+}
 
+/* Efecto hover del botón */
+.inter-content .btn:hover {
+    background-image: url('assets/fondo2.png');
+    background-size: cover;
+    color: var(--color-blanco);
+    border: none;
+}
 
 /* Sección de Servicios */
 .services {
