@@ -77,10 +77,12 @@ header {
     font-size: 1.1rem;
     color: var(--color-gris-oscuro);
     transition: color 0.3s;
+     font-weight: 400;
 }
 
 .nav-links a:hover {
     color: var(--color-marron-rojizo);
+     font-weight: 400;
 }
 
 .hamburger {
