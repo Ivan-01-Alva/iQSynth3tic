@@ -259,27 +259,28 @@ header {
     display: flex;
     justify-content: center; /* Centra verticalmente el contenido */
     align-items: center;
-    padding: 80px 20px; /* Espacio arriba y abajo dentro del rectángulo, ajustado para igualar */
+    padding: 60px 20px; /* Ajustamos el padding para tener más espacio arriba y abajo */
     position: relative;
 }
 
 /* Grupo de textos para la frase */
 .text-group {
     display: flex;
-    justify-content: space-between; /* Distribuir los textos en un solo renglón */
+    justify-content: space-between; /* Distribuye los textos */
     align-items: center;
     width: 100%; /* Ancho completo del rectángulo */
     white-space: nowrap; /* Asegura que el texto no se divida en líneas */
+    margin-bottom: 40px; /* Ajuste para asegurar espacio suficiente con el botón */
 }
 
-/* Palabra GPTs centrada en la parte izquierda */
+/* Palabra GPTs centrada a la izquierda */
 .left-text {
     font-size: 3rem; /* Tamaño ajustado para GPTs */
     font-weight: 600; /* Grosor ajustado */
     color: #00AAFF; /* Color azul */
     text-align: left;
-    flex: 1; /* Ocupa el espacio necesario en el tercio izquierdo */
-    padding-left: 20px; /* Asegura que esté más cerca del borde izquierdo */
+    flex: 1; /* Ocupa el espacio de la parte izquierda */
+    padding-left: 20px; /* Empuja la palabra GPTs más cerca del borde izquierdo */
 }
 
 /* Símbolo 'x' centrado en todo el rectángulo */
@@ -287,7 +288,8 @@ header {
     font-size: 2.5rem; /* Tamaño ajustado para 'x' */
     font-weight: 600; /* Mismo grosor */
     text-align: center;
-    flex: 0; /* Mantiene el espacio reducido en el centro */
+    flex: 0; /* Mantiene la 'x' centrada */
+    margin: 0 30px; /* Espacio lateral para la 'x' */
 }
 
 /* Texto alineado a la derecha */
@@ -296,9 +298,9 @@ header {
     font-weight: 500; /* Grosor más ligero */
     color: var(--color-gris-oscuro); /* Color gris oscuro */
     text-align: right;
-    flex: 1; /* Asegura que ocupa el espacio en el tercio derecho */
-    padding-right: 20px; /* Asegura que esté cerca del borde derecho */
-    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+    flex: 1; /* Asegura que ocupa el espacio de la parte derecha */
+    padding-right: 20px; /* Empuja el texto hacia el borde derecho */
+    white-space: nowrap; /* Evita que el texto se divida en líneas */
 }
 
 /* Botón "Conócenos" en la sección intermedia */
@@ -310,8 +312,7 @@ header {
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: auto; /* Ajuste para centrar verticalmente el botón */
-    margin-bottom: 40px; /* Espacio igual al margen superior del texto */
+    margin-top: 40px; /* Suficiente espacio entre el botón y los textos */
     text-decoration: none;
     background-image: none;
     transition: background-color 0.3s, color 0.3s;
@@ -324,6 +325,7 @@ header {
     color: var(--color-blanco); /* Cambia el color del texto al blanco al hacer hover */
     border: none;
 }
+
 
 /* Sección de Servicios */
 .services {
