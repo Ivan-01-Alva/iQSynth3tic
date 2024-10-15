@@ -126,7 +126,7 @@ header {
 }
 
 .hero-left-rectangle .hero-text h1 {
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 6rem;
     font-weight: 300;
     margin-bottom: 80px;
@@ -193,7 +193,7 @@ header {
 
 /* Texto "Evolución" en el rectángulo derecho */
 .hero-right-rectangle .evolucion-text {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--color-blanco);
     text-align: center;
 }
