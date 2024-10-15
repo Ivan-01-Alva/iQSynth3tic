@@ -256,9 +256,9 @@ header {
 /* Rectángulo en la sección inter1 */
 .inter-rectangle {
     background-color: var(--color-lila-claro);
-    width: 95%;
+    width: 95%; /* Ampliamos ligeramente el ancho */
     height: auto;
-    border-radius: 25px;
+    border-radius: 25px; /* Ajustamos los bordes */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,34 +275,37 @@ header {
     justify-content: center;
 }
 
+/* Ajuste del espaciado y línea entre renglones */
 .inter-text {
     color: var(--color-gris-oscuro);
-    line-height: 1.4;
+    line-height: 1.6; /* Aumentamos el espaciado entre líneas */
     font-weight: 600;
     text-align: center;
 }
 
 /* Estilo del primer renglón */
 .inter-text .titulo-principal {
-    font-size: 2rem; /* Tamaño ajustado para el primer renglón */
+    font-size: 2rem; /* Tamaño ajustado */
+    margin-bottom: 20px; /* Añadimos espacio debajo */
 }
 
 /* Estilo del segundo renglón */
 .inter-text .subtitulo {
-    font-size: 3rem; /* Tamaño ajustado para el segundo renglón */
-    color: var(--color-gris-oscuro); /* Texto en gris oscuro */
-    margin: 20px 0;
+    font-size: 3rem; /* Ajustamos el tamaño del segundo renglón */
+    color: var(--color-gris-oscuro); /* Color gris oscuro para el texto */
+    margin: 30px 0; /* Más espacio entre el primer y segundo renglón */
 }
 
 .inter-text .subtitulo .highlight {
-    color: var(--color-azul-claro); /* Color azul solo para "GPTs" */
+    color: var(--color-azul-claro); /* Solo "GPTs" en azul */
 }
 
 /* Estilo del tercer renglón */
 .inter-text .descripcion {
-    font-size: 1rem;
-    margin-bottom: 30px;
-    line-height: 1.6;
+    font-size: 1rem; /* Texto más pequeño */
+    font-weight: 400; /* Aligeramos el grosor de la fuente */
+    margin-bottom: 40px; /* Espacio debajo de la descripción */
+    line-height: 1.8; /* Aumentamos el espaciado en el tercer renglón */
     color: var(--color-gris-oscuro);
 }
 
@@ -348,7 +351,6 @@ header {
         font-size: 0.9rem;
     }
 }
-
 
 /* Sección de Servicios */
 .services {
