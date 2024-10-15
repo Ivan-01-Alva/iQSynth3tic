@@ -276,7 +276,7 @@ header {
 }
 
 .inter-text {
-    font-size: 1.5rem; /* Tamaño del texto ajustado */
+    font-size: 2rem; /* Tamaño del texto ajustado */
     color: var(--color-gris-oscuro); /* Texto en color gris oscuro */
     line-height: 1.2;
     font-weight: 600;
