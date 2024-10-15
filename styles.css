@@ -288,7 +288,7 @@ header {
 
 /* Estilo del segundo renglón */
 .inter-text .subtitulo {
-    font-size: 2.5rem; /* Tamaño ajustado para el segundo renglón */
+    font-size: 3rem; /* Tamaño ajustado para el segundo renglón */
     color: var(--color-gris-oscuro); /* Texto en gris oscuro */
     margin: 20px 0;
 }
