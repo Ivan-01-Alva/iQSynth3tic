@@ -8,12 +8,10 @@
     --color-beige-rosado: #d5ab95;
     --color-blanco: #ffffff;
     --color-azul-claro: #00AAFF;
-    --color-lila-claro: #f4ebf5;
+    --color-lila-claro: #f1e4f2;
 }
 
-/* Importar Fuente */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-
+/* Estilos base */
 * {
     margin: 0;
     padding: 0;
@@ -26,228 +24,13 @@ body {
     background-color: var(--color-blanco);
 }
 
-/* Barra de Navegación */
-header {
-    width: 88%;
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.60);
-    z-index: 1000;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 50px;
-    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.1);
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 3%;
-}
-
-.logo a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.logo-img {
-    height: 40px;
-    width: auto;
-    margin-right: 20px;
-}
-
-.company-name {
-    color: var(--color-azul-claro);
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    font-size: 1.1rem;
-    color: var(--color-gris-oscuro);
-    transition: color 0.3s;
-     font-weight: 400;
-}
-
-.nav-links a:hover {
-    color: var(--color-marron-rojizo);
-     font-weight: 400;
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-}
-
-.hamburger .bar {
-    width: 20px;
-    height: 3px;
-    background-color: var(--color-blanco);
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
-/* Fondo general de la Sección Hero */
-.hero {
-    background-color: var(--color-blanco);
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    padding: 130px 5% 100px;
-    gap: 20px;
-    position: relative;
-}
-
-/* Rectángulo Izquierdo */
-.hero-left-rectangle {
-    width: 50%;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    position: relative; /* Para que el botón absoluto se coloque correctamente */
-    text-align: center;
-    border: 2px solid transparent;
-    border-radius: 25px;
-    padding: 40px;
-    padding-bottom: 80px; /* Espacio para que el botón no se solape con el contenido */
-}
-
-.hero-left-rectangle .hero-text h1 {
-    margin-top: 30px;
-    font-size: 6rem;
-    font-weight: 300;
-    margin-bottom: 95px;
-}
-
-/* Palabras clave */
-.hero-left-rectangle .keywords {
-    margin: 0 auto;
-    font-size: 4rem;
-    line-height: 1.2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: auto; /* Ajustamos para que solo ocupe el espacio necesario */
-    font-weight: 600;
-}
-
-.hero-left-rectangle .keyword.highlighted {
-    color: var(--color-azul-claro);
-    margin-left: 50px;
-    text-align: center;
-}
-
-/* Botón */
-.hero-left-rectangle .btn {
-    background-color: var(--color-blanco);
-    color: var(--color-azul-claro);
-    padding: 12px 30px;
-    border: 2px solid var(--color-gris-oscuro);
-    border-radius: 50px;
-    font-size: 1rem;
-    cursor: pointer;
-    position: absolute; /* Fijamos el botón en la parte inferior */
-    bottom: 50px; /* Asegura que esté cerca del borde inferior */
-    left: 50%;
-    transform: translateX(-50%); /* Centra el botón horizontalmente */
-    text-decoration: none;
-    background-image: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-/* Botón hover con imagen de fondo */
-.hero-left-rectangle .btn:hover {
-    background-image: url('assets/fondo2.png'); /* Fondo con imagen cuando se activa */
-    background-size: cover;
-    color: var(--color-blanco); /* Color de texto cuando se activa */
-    border: none;
-}
-
-/* Rectángulo derecho con imagen de fondo y texto "Evolución" */
-.hero-right-rectangle {
-    width: 50%; /* Tamaño ajustable */
-    height: 70vh; /* Ajustar la altura del rectángulo */
-    background-image: url('assets/imagen1.jpg'); /* Imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end; /* Alinear el texto "Evolución" cerca del borde inferior */
-    justify-content: center;
-    padding-bottom: 20px;
-    border: none; /* Sin bordes visibles */
-    border-radius: 25px; /* Bordes redondeados */
-    box-shadow: 0px 16px 30px rgba(0,0,0,0.1); /* Sombra sutil */
-}
-
-/* Texto "Evolución" en el rectángulo derecho */
-.hero-right-rectangle .evolucion-text {
-    font-size: 3.5rem;
-    color: var(--color-blanco);
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-/* Contenedor para las frases de desplazamiento */
-.moving-text-container {
-    position: absolute;
-    bottom: 50px; /* Colocarlo al final de la sección hero */
-    width: 100%; /* Ocupa todo el ancho */
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden; /* Ocultar el desbordamiento de las frases */
-    white-space: nowrap; /* Evitar que las frases se dividan en varias líneas */
-    padding: 10px 0;
-}
-
-/* Estilo para las frases */
-.moving-text {
-    font-size: 1.5rem; /* Tamaño pequeño pero legible */
-    font-weight: 600; /* Grosor ligero para el texto */
-    color: #af73c9;
-    animation: moveText 26s linear infinite; /* Ambas frases tendrán la misma duración */
-    opacity: 0; /* Ocultamos la frase inicialmente para hacer una transición suave */
-}
-
-/* Sincronización de la segunda frase */
-.moving-text:nth-child(2) {
-    animation-delay: 7.5s; /* La segunda frase comenzará 15s después de la primera */
-}
-
-/* Animación para que las frases se desplacen */
-@keyframes moveText {
-    0% {
-        transform: translateX(150%); /* Fuera de la pantalla por la derecha */
-        opacity: 1; /* Aparece suavemente */
-    }
-    50% {
-        transform: translateX(0); /* Completamente visible en el centro */
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(-180%); /* Sale de la pantalla por la izquierda */
-        opacity: 0; /* Desvanece la frase para evitar el corte */
-    }
-}
-
 /* Sección intermedia (inter1) */
 .intermediate {
-    background-color: var(--color-blanco); /* Fondo blanco */
+    background-color: var(--color-blanco);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh; /* Mantener altura según la instrucción */
+    height: auto;
     text-align: center;
     padding: 40px;
     position: relative;
@@ -255,21 +38,20 @@ header {
 
 /* Rectángulo en la sección inter1 */
 .inter-rectangle {
-    background-color: var(--color-lila-claro); /* Color de fondo del rectángulo */
-    width: 90%; /* Ajustamos el ancho para coincidir con los límites laterales de los rectángulos de la sección hero */
-    height: 100%; /* Cubre todo el alto de la sección */
-    border-radius: 45px; /* Bordes redondeados similares a la sección hero */
+    background-color: var(--color-lila-claro);
+    width: 50%;
+    height: auto;
+    border-radius: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 20px; /* Añadido padding para un mejor espaciado */
+    padding: 40px;
+    flex-direction: column;
 }
 
-/* Estilo del texto de la sección intermedia */
+/* Contenido en la sección inter1 */
 .inter-content {
-    width: 100%;
-    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,20 +59,37 @@ header {
 }
 
 .inter-text {
-    font-size: 2rem; /* Tamaño del texto ajustado */
-    color: var(--color-gris-oscuro); /* Texto en color gris oscuro */
-    line-height: 1.2;
+    color: var(--color-gris-oscuro);
+    line-height: 1.4;
     font-weight: 600;
-    margin-bottom: 40px; /* Espacio entre el texto y el botón */
     text-align: center;
 }
 
-.inter-text .highlight {
-    color: var(--color-azul-claro); /* Color azul para destacar "GPTs" */
-    font-size: 2.5rem; /* Un poco más grande que el resto del texto */
+/* Estilo del primer renglón */
+.inter-text .titulo-principal {
+    font-size: 3rem; /* Tamaño ajustado para el primer renglón */
 }
 
-/* Botón "Conócenos" en la sección intermedia */
+/* Estilo del segundo renglón */
+.inter-text .subtitulo {
+    font-size: 2.5rem; /* Tamaño ajustado para el segundo renglón */
+    color: var(--color-gris-oscuro); /* Texto en gris oscuro */
+    margin: 20px 0;
+}
+
+.inter-text .subtitulo .highlight {
+    color: var(--color-azul-claro); /* Color azul solo para "GPTs" */
+}
+
+/* Estilo del tercer renglón */
+.inter-text .descripcion {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: var(--color-gris-oscuro);
+}
+
+/* Botón "Conócenos" */
 .inter-content .btn {
     background-color: var(--color-blanco);
     color: var(--color-azul-claro);
@@ -299,22 +98,40 @@ header {
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    position: absolute; /* Posicionamos el botón */
-    bottom: 30px; /* Entre el borde inferior de la sección y la frase */
-    left: 50%;
-    transform: translateX(-50%); /* Centra el botón */
     text-decoration: none;
-    background-image: none;
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Efecto hover del botón "Conócenos" */
+/* Efecto hover del botón */
 .inter-content .btn:hover {
-    background-image: url('assets/fondo2.png'); /* Imagen de fondo al hacer hover */
-    background-size: cover;
-    color: var(--color-blanco); /* Cambia el color del texto al blanco al hacer hover */
+    background-color: var(--color-marron-rojizo);
+    color: var(--color-blanco);
     border: none;
 }
+
+/* Ajustes de responsividad */
+@media (max-width: 768px) {
+    .intermediate {
+        padding: 20px;
+    }
+
+    .inter-rectangle {
+        width: 80%;
+    }
+
+    .inter-text .titulo-principal {
+        font-size: 2rem;
+    }
+
+    .inter-text .subtitulo {
+        font-size: 1.8rem;
+    }
+
+    .inter-text .descripcion {
+        font-size: 0.9rem;
+    }
+}
+
 
 
 
