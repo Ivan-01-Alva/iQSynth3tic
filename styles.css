@@ -299,7 +299,7 @@ header {
     font-size: 1rem;
     cursor: pointer;
     position: absolute; /* Posicionamos el botón */
-    bottom: 20px; /* Entre el borde inferior de la sección y la frase */
+    bottom: 30px; /* Entre el borde inferior de la sección y la frase */
     left: 50%;
     transform: translateX(-50%); /* Centra el botón */
     text-decoration: none;
