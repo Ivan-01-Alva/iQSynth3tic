@@ -160,7 +160,7 @@ header {
     font-size: 1rem;
     cursor: pointer;
     position: absolute; /* Fijamos el botón en la parte inferior */
-    bottom: 60px; /* Asegura que esté cerca del borde inferior */
+    bottom: 40px; /* Asegura que esté cerca del borde inferior */
     left: 50%;
     transform: translateX(-50%); /* Centra el botón horizontalmente */
     text-decoration: none;
