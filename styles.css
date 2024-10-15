@@ -283,7 +283,7 @@ header {
 
 /* Estilo del primer renglón */
 .inter-text .titulo-principal {
-    font-size: 3rem; /* Tamaño ajustado para el primer renglón */
+    font-size: 2rem; /* Tamaño ajustado para el primer renglón */
 }
 
 /* Estilo del segundo renglón */
