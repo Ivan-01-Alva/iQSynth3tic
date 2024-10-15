@@ -7,7 +7,8 @@
     --color-gris-oscuro: #51434e;
     --color-beige-rosado: #d5ab95;
     --color-blanco: #ffffff;
-
+    --color-azul-claro: #00AAFF;
+    --color-lila-claro: #f1e4f2;
 }
 
 /* Importar Fuente */
@@ -58,7 +59,7 @@ header {
 }
 
 .company-name {
-    color: #00AAFF;
+    color: var(--color-azul-claro);
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -144,7 +145,7 @@ header {
 }
 
 .hero-left-rectangle .keyword.highlighted {
-    color: #00AAFF;
+    color: var(--color-azul-claro);
     margin-left: 50px;
     text-align: center;
 }
@@ -152,7 +153,7 @@ header {
 /* Botón */
 .hero-left-rectangle .btn {
     background-color: var(--color-blanco);
-    color: #00AAFF;
+    color: var(--color-azul-claro);
     padding: 12px 30px;
     border: 2px solid var(--color-gris-oscuro);
     border-radius: 50px;
@@ -173,7 +174,6 @@ header {
     color: var(--color-blanco); /* Color de texto cuando se activa */
     border: none;
 }
-
 
 /* Rectángulo derecho con imagen de fondo y texto "Evolución" */
 .hero-right-rectangle {
@@ -240,7 +240,7 @@ header {
     }
 }
 
-/* Fondo general de la Sección intermedia (inter1) */
+/* Sección intermedia (inter1) */
 .intermediate {
     background-color: var(--color-blanco); /* Fondo blanco */
     display: flex;
@@ -254,39 +254,45 @@ header {
 
 /* Rectángulo en la sección inter1 */
 .inter-rectangle {
-    background-color: #dcd8f0; /* Color de fondo del rectángulo */
-    width: 100%; /* Cubre todo el ancho */
+    background-color: var(--color-lila-claro); /* Color de fondo del rectángulo */
+    width: 50%; /* Ajustamos el ancho para coincidir con los límites laterales de los rectángulos de la sección hero */
     height: 100%; /* Cubre todo el alto de la sección */
     border-radius: 45px; /* Bordes redondeados similares a la sección hero */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 20px; /* Añadido padding para un mejor espaciado */
 }
 
 /* Estilo del texto de la sección intermedia */
 .inter-content {
     width: 100%;
     max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .inter-text {
-    font-size: 3rem; /* Tamaño del texto */
+    font-size: 2.5rem; /* Tamaño del texto ajustado */
     color: var(--color-gris-oscuro); /* Texto en color gris oscuro */
     line-height: 1.2;
     font-weight: 600;
     margin-bottom: 40px; /* Espacio entre el texto y el botón */
+    text-align: center;
 }
 
 .inter-text .highlight {
-    color: #00AAFF; /* Color azul para destacar "GPTs" */
-    font-size: 4rem; /* Un poco más grande que el resto del texto */
+    color: var(--color-azul-claro); /* Color azul para destacar "GPTs" */
+    font-size: 3rem; /* Un poco más grande que el resto del texto */
 }
 
 /* Botón "Conócenos" en la sección intermedia */
 .inter-content .btn {
     background-color: var(--color-blanco);
-    color: #00AAFF;
+    color: var(--color-azul-claro);
     padding: 12px 30px;
     border: 2px solid var(--color-gris-oscuro);
     border-radius: 50px;
