@@ -255,7 +255,7 @@ header {
 /* Rectángulo en la sección inter1 */
 .inter-rectangle {
     background-color: var(--color-lila-claro); /* Color de fondo del rectángulo */
-    width: 50%; /* Ajustamos el ancho para coincidir con los límites laterales de los rectángulos de la sección hero */
+    width: 90%; /* Ajustamos el ancho para coincidir con los límites laterales de los rectángulos de la sección hero */
     height: 100%; /* Cubre todo el alto de la sección */
     border-radius: 45px; /* Bordes redondeados similares a la sección hero */
     display: flex;
@@ -276,7 +276,7 @@ header {
 }
 
 .inter-text {
-    font-size: 2.5rem; /* Tamaño del texto ajustado */
+    font-size: 1.5rem; /* Tamaño del texto ajustado */
     color: var(--color-gris-oscuro); /* Texto en color gris oscuro */
     line-height: 1.2;
     font-weight: 600;
@@ -286,7 +286,7 @@ header {
 
 .inter-text .highlight {
     color: var(--color-azul-claro); /* Color azul para destacar "GPTs" */
-    font-size: 3rem; /* Un poco más grande que el resto del texto */
+    font-size: 2.5rem; /* Un poco más grande que el resto del texto */
 }
 
 /* Botón "Conócenos" en la sección intermedia */
