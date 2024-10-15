@@ -246,11 +246,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh; /* Mantener altura según la instrucción */
+    height: 40vh; /* Mantener altura según la instrucción */
     text-align: center;
     padding: 40px;
     position: relative;
 }
+
 /* Rectángulo en la sección inter1 */
 .inter-rectangle {
     background-color: #dcd8f0; /* Color de fondo del rectángulo */
@@ -261,40 +262,25 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 60px 20px;
 }
 
-/* Grupo de textos para la frase */
-.text-group {
-    display: flex;
-    justify-content: space-between;
+/* Estilo del texto de la sección intermedia */
+.inter-content {
     width: 100%;
-    max-width: 1200px; /* Ancho máximo del grupo de texto */
-    align-items: center; /* Alineación vertical centrada */
-    text-align: center;
+    max-width: 1200px;
 }
 
-/* Palabra GPTs alineada a la izquierda */
-.highlight {
+.inter-text {
+    font-size: 3rem; /* Tamaño del texto */
+    color: var(--color-gris-oscuro); /* Texto en color gris oscuro */
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 40px; /* Espacio entre el texto y el botón */
+}
+
+.inter-text .highlight {
     color: #00AAFF; /* Color azul para destacar "GPTs" */
-    font-size: 4rem; /* Tamaño más grande para la palabra GPTs */
-    text-align: left;
-    flex: 1; /* Ocupa el espacio de la columna izquierda */
-}
-
-/* Símbolo 'x' centrado */
-.center-text {
-    font-size: 3rem; /* Tamaño ajustado para 'x' */
-    text-align: center;
-    flex: 1; /* Ocupa el espacio del centro */
-}
-
-/* Texto alineado a la derecha */
-.right-text {
-    font-size: 2rem; /* Tamaño del resto del texto */
-    color: var(--color-gris-oscuro); /* Color del texto */
-    text-align: right;
-    flex: 2; /* Alineación a la derecha */
+    font-size: 4rem; /* Un poco más grande que el resto del texto */
 }
 
 /* Botón "Conócenos" en la sección intermedia */
@@ -306,7 +292,10 @@ header {
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: 20px;
+    position: absolute; /* Posicionamos el botón */
+    bottom: 20px; /* Entre el borde inferior de la sección y la frase */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el botón */
     text-decoration: none;
     background-image: none;
     transition: background-color 0.3s, color 0.3s;
@@ -319,6 +308,7 @@ header {
     color: var(--color-blanco); /* Cambia el color del texto al blanco al hacer hover */
     border: none;
 }
+
 
 
 /* Sección de Servicios */
