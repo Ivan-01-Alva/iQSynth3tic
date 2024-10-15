@@ -120,7 +120,7 @@ header {
     position: relative; /* Para que el botón absoluto se coloque correctamente */
     text-align: center;
     border: 2px solid transparent;
-    border-radius: 45px;
+    border-radius: 25px;
     padding: 40px;
     padding-bottom: 80px; /* Espacio para que el botón no se solape con el contenido */
 }
@@ -187,7 +187,7 @@ header {
     justify-content: center;
     padding-bottom: 20px;
     border: none; /* Sin bordes visibles */
-    border-radius: 45px; /* Bordes redondeados */
+    border-radius: 25px; /* Bordes redondeados */
     box-shadow: 0px 16px 30px rgba(0,0,0,0.1); /* Sombra sutil */
 }
 
