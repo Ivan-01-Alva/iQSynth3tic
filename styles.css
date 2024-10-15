@@ -278,7 +278,7 @@ header {
 /* Ajuste del espaciado y línea entre renglones */
 .inter-text {
     color: var(--color-gris-oscuro);
-    line-height: 1.6; /* Aumentamos el espaciado entre líneas */
+    line-height: 1.8; /* Aumentamos el espaciado entre líneas */
     font-weight: 600;
     text-align: center;
 }
@@ -286,14 +286,14 @@ header {
 /* Estilo del primer renglón */
 .inter-text .titulo-principal {
     font-size: 2rem; /* Tamaño ajustado */
-    margin-bottom: 20px; /* Añadimos espacio debajo */
+    margin-bottom: 50px; /* Añadimos espacio debajo */
 }
 
 /* Estilo del segundo renglón */
 .inter-text .subtitulo {
     font-size: 3rem; /* Ajustamos el tamaño del segundo renglón */
     color: var(--color-gris-oscuro); /* Color gris oscuro para el texto */
-    margin: 30px 0; /* Más espacio entre el primer y segundo renglón */
+    margin: 50px 0; /* Más espacio entre el primer y segundo renglón */
 }
 
 .inter-text .subtitulo .highlight {
@@ -320,6 +320,7 @@ header {
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 15px;
 }
 
 /* Efecto hover del botón */
