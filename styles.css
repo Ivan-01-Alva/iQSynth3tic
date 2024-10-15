@@ -257,7 +257,7 @@ header {
     background-color: var(--color-lila-claro);
     width: 95%;
     height: auto;
-    border-radius: 45px;
+    border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
