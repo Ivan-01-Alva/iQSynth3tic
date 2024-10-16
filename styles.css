@@ -328,7 +328,8 @@ header {
 
 /* Efecto hover del botón */
 .inter-content .btn:hover {
-    background-color: var(--color-marron-rojizo);
+    background-image: url('assets/fondo2.png');
+    background-size: cover;
     color: var(--color-blanco);
     border: none;
 }
