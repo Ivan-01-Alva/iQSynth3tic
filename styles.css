@@ -256,7 +256,7 @@ header {
 /* Rectángulo en la sección inter1 */
 .inter-rectangle {
     background-color: var(--color-blanco);
-    width: 95%; /* Ampliamos ligeramente el ancho */
+    width: 50%; /* Ampliamos ligeramente el ancho */
     height: auto;
     border-radius: 25px; /* Ajustamos los bordes */
     border: none;
