@@ -483,13 +483,13 @@ header {
 
 /* Ajustes del ícono y el texto para acercarlos al borde superior */
 .service-item .flip-card-front img {
-    margin-top: 10px; /* Acerca el ícono al borde superior */
+    margin-top: 25px; /* Acerca el ícono al borde superior */
     width: 60px; /* Tamaño del ícono */
 }
 
 .service-item .flip-card-front h3 {
     color: white; /* Cambiamos el color del texto a blanco */
-    margin-top: 15px; /* Espacio entre el ícono y el texto */
+    margin-top: 25px; /* Espacio entre el ícono y el texto */
 }
 
 .service-item p {
