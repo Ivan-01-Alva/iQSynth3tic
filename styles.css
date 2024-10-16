@@ -196,7 +196,7 @@ header {
     font-size: 3rem;
     color: var(--color-blanco);
     text-align: center;
-     bottom: 50px;
+     bottom: 30px;
 }
 
 /* Contenedor para las frases de desplazamiento */
@@ -323,6 +323,7 @@ header {
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
     margin-bottom: 5px;
+    bottom: 20px; /* Asegura que esté cerca del borde inferior */
 }
 
 /* Efecto hover del botón */
