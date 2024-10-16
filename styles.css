@@ -441,7 +441,7 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 10px; /* Redondear la imagen para ajustarse a la forma */
+    border-radius: 25px; /* Redondear la imagen para ajustarse a la forma */
 }
 
 
