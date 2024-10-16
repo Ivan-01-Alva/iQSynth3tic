@@ -405,7 +405,6 @@ header {
     background-size: cover;
     background-position: center;
     perspective: 1000px; /* Necesario para el efecto 3D */
-    background-color: white; /* Cambiamos el fondo de los rectángulos a blanco */
 }
 
 .service-item:hover {
@@ -419,6 +418,8 @@ header {
     transition: transform 0.8s;
     transform-style: preserve-3d;
     background-color: white; /* Fondo blanco durante el giro */
+    border-radius: 25px; /* Redondeamos todo el contenedor interior */
+    overflow: hidden; /* Ocultamos cualquier parte que sobresalga */
 }
 
 .service-item .flip-card-front, .service-item .flip-card-back {
@@ -429,10 +430,11 @@ header {
     backface-visibility: hidden; /* Hacemos que la cara trasera no sea visible */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    background-color: white; /* Establecemos el fondo blanco para las dos caras */
+    justify-content: flex-start; /* Alineamos todo el contenido al principio (arriba) */
+    align-items: center; /* Centramos horizontalmente el contenido */
+    border-radius: 25px; /* Aseguramos que las esquinas sean redondeadas */
+    background-color: var(--color-gris-claro); /* Fondo gris claro */
+    overflow: hidden; /* Aseguramos que el contenido respete las esquinas redondeadas */
 }
 
 .service-item .flip-card-front {
@@ -441,9 +443,8 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 25px; /* Redondear la imagen para ajustarse a la forma */
+    border-radius: 25px; /* Redondeamos las esquinas del frente también */
 }
-
 
 .service-item .flip-card-back {
     background-color: var(--color-gris-claro);
@@ -480,22 +481,15 @@ header {
     background-image: url('assets/fondo1.jpg');
 }
 
-/* Ajustes para mover los íconos más cerca del borde superior */
+/* Ajustes del ícono y el texto para acercarlos al borde superior */
 .service-item .flip-card-front img {
     margin-top: 10px; /* Acerca el ícono al borde superior */
-    width: 60px; /* Tamaño reducido de los íconos */
+    width: 60px; /* Tamaño del ícono */
 }
 
-/* Ajustes para mover los íconos más cerca del borde superior */
-.service-item .flip-card-back img {
-    margin-top: 10px; /* Acerca el ícono al borde superior */
-    width: 60px; /* Tamaño reducido de los íconos */
-}
-
-.service-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: var(--color-blanco);
+.service-item .flip-card-front h3 {
+    color: white; /* Cambiamos el color del texto a blanco */
+    margin-top: 15px; /* Espacio entre el ícono y el texto */
 }
 
 .service-item p {
@@ -506,7 +500,7 @@ header {
 
 /* Ajustes de la cara trasera */
 .flip-card-back p {
-    color: var(--color-blanco);
+    color: var(--color-gris-oscuro);
     font-size: 1rem;
     text-align: center;
 }
