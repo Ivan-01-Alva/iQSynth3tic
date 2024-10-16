@@ -478,7 +478,7 @@ header {
 
 /* Ajuste del tamaño de los íconos (la mitad de pequeños) */
 .service-item img {
-    width: 40px; /* Reducimos el tamaño al 50% */
+    width: 60px; /* Reducimos el tamaño al 50% */
     margin-bottom: 10px;
 }
 
