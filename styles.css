@@ -21,7 +21,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif; /* Actualizado para usar Poppins */
+    font-family: 'Poppins', sans-serif;
     color: var(--color-azul-oscuro);
     background-color: var(--color-blanco);
 }
@@ -377,11 +377,11 @@ header {
     border-radius: 25px;
     text-align: center;
     transition: transform 0.8s;
-    height: 650px;
     position: relative;
     background-size: cover;
     background-position: center;
     perspective: 1000px;
+    overflow: hidden;
 }
 
 .service-item:hover {
@@ -394,46 +394,32 @@ header {
     height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    background-color: white;
-    border-radius: 25px;
-    overflow: hidden;
 }
 
 .service-item .flip-card-front, .service-item .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border-radius: 25px;
-    background-color: var(--color-gris-claro);
     overflow: hidden;
 }
 
 .service-item .flip-card-front {
-    background-color: var(--color-gris-claro);
-    z-index: 2;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 25px;
+    z-index: 2;
 }
 
-/* Ajustes de la cara trasera */
 .service-item .flip-card-back {
     background-color: var(--color-gris-claro);
-    color: white;
     transform: rotateY(180deg);
-    background-image: url('assets/guides.gif.webp');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 25px;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 .service-item.flipped .flip-card-inner {
@@ -456,28 +442,30 @@ header {
     background-image: url('assets/fondo1.jpg');
 }
 
-.service-item .flip-card-front img {
-    margin-top: 25px;
-    width: 60px;
-}
-
 .service-item .flip-card-front h3 {
     color: white;
     margin-top: 25px;
 }
 
-.service-item p {
-    font-size: 1rem;
-    color: var(--color-gris-oscuro);
+.service-item .flip-card-front p {
+    color: white;
     padding: 20px;
 }
 
-/* Ajustes de la cara trasera */
-.flip-card-back p {
-    color: var(--color-blanco);
+.service-item .flip-card-back {
+    background-image: url('assets/guides.gif.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.service-item .flip-card-back p {
+    color: var(--color-azul-oscuro);
     font-size: 1rem;
     text-align: center;
-    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
 }
 
 /* Ajustes de responsividad */
@@ -528,10 +516,18 @@ header {
 
     .hero-left-rectangle .hero-text h1 {
         font-size: 3rem;
+        margin-bottom: 20px;
     }
 
     .hero-left-rectangle .keywords {
         font-size: 2rem;
+    }
+
+    /* Ajustar espaciado en el botón */
+    .hero-left-rectangle .btn {
+        position: static;
+        margin-top: 20px;
+        transform: none;
     }
 
     /* Sección Intermedia */
@@ -568,10 +564,11 @@ header {
     .service-item {
         flex: 1 1 100%;
         height: auto;
+        margin: 10px 0;
     }
 
     .service-item .flip-card-inner {
-        flex-direction: column;
+        height: 100%;
     }
 
     /* Ajustes de fuente */
@@ -616,8 +613,10 @@ header {
     }
 }
 
-/* Corrección de clases duplicadas */
-/* Asegúrate de que no haya clases .services duplicadas en tu código */
+/* Añadir cursor pointer a las tarjetas */
+.service-item {
+    cursor: pointer;
+}
 
 
 
