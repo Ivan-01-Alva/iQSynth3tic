@@ -245,7 +245,7 @@ header {
 .intermediate {
     background-color: var(--color-blanco);
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 40vh;
     text-align: center;
