@@ -480,12 +480,6 @@ header {
     background-image: url('assets/fondo1.jpg');
 }
 
-/* Ajuste del tamaño de los íconos (la mitad de pequeños) */
-.service-item img {
-    width: 60px; /* Reducimos el tamaño al 50% */
-    margin-bottom: 25px;
-}
-
 /* Ajustes para mover los íconos más cerca del borde superior */
 .service-item .flip-card-front img {
     margin-top: 10px; /* Acerca el ícono al borde superior */
