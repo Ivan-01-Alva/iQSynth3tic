@@ -429,34 +429,36 @@ header {
     backface-visibility: hidden; /* Hacemos que la cara trasera no sea visible */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Alineamos el contenido en la parte superior */
     align-items: center;
     border-radius: 25px;
     background-color: white; /* Establecemos el fondo blanco para las dos caras */
+    padding-top: 40px; /* Añadimos espacio superior para el contenido */
 }
 
-.service-item .flip-card-front {
-    background-color: var(--color-gris-claro);
-    z-index: 2;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 10px; /* Redondear la imagen para ajustarse a la forma */
+/* Ajuste del tamaño de los íconos (la mitad de pequeños) */
+.service-item img {
+    width: 60px; /* Reducimos el tamaño al 50% */
+    margin-bottom: 15px;
 }
 
-.service-item .flip-card-back {
-    background-color: var(--color-gris-claro);
-    color: var(--color-gris-oscuro);
-    transform: rotateY(180deg);
-    background-image: url('assets/guides.gif.webp'); /* Añadir GIF en el reverso */
-    background-size: cover; /* Aseguramos que el GIF cubra toda la parte trasera */
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 10px; /* Aseguramos que las esquinas sean redondeadas */
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--color-blanco); /* Cambiamos el color del título a blanco */
 }
 
-.service-item.flipped .flip-card-inner {
-    transform: rotateY(180deg);
+.service-item p {
+    font-size: 1rem;
+    color: var(--color-blanco); /* Cambiamos el color del texto a blanco */
+    padding: 20px;
+}
+
+/* Ajustes de la cara trasera */
+.flip-card-back p {
+    color: var(--color-blanco); /* Cambiamos el color del texto a blanco en la parte trasera */
+    font-size: 1rem;
+    text-align: center;
 }
 
 /* Primer rectángulo con fondo de imagen */
@@ -479,30 +481,11 @@ header {
     background-image: url('assets/fondo1.jpg');
 }
 
-/* Ajuste del tamaño de los íconos (la mitad de pequeños) */
-.service-item img {
-    width: 60px; /* Reducimos el tamaño al 50% */
-    margin-bottom: 25px;
+/* Ajustes adicionales si es necesario */
+.service-item.flipped .flip-card-inner {
+    transform: rotateY(180deg);
 }
 
-.service-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: var(--color-azul-claro);
-}
-
-.service-item p {
-    font-size: 1rem;
-    color: var(--color-gris-oscuro);
-    padding: 20px;
-}
-
-/* Ajustes de la cara trasera */
-.flip-card-back p {
-    color: var(--color-gris-oscuro);
-    font-size: 1rem;
-    text-align: center;
-}
 
 /* Sección del Equipo */
 .team {
