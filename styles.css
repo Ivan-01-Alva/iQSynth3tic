@@ -453,7 +453,7 @@ header {
     background-size: cover; /* Aseguramos que el GIF cubra toda la parte trasera */
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 10px; /* Aseguramos que las esquinas sean redondeadas */
+    border-radius: 25px; /* Aseguramos que las esquinas sean redondeadas */
 }
 
 .service-item.flipped .flip-card-inner {
