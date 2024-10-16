@@ -380,18 +380,25 @@ header {
 .services {
     padding: 100px 5%;
     background-color: var(--color-blanco);
-    text-align: center;
-    color: var(--color-marron-rojizo);
+    min-height: 100vh; /* Igualamos el tamaño de la sección de servicios con la sección hero */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--color-gris-oscuro); /* Cambiamos el color de fuente a gris oscuro */
 }
 
 .services h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    text-align: left; /* Alineamos el título a la izquierda */
+    color: var(--color-gris-oscuro); /* Cambiamos el color del título a gris oscuro */
 }
 
 .services p {
     font-size: 1rem;
     margin-bottom: 50px;
+    text-align: left; /* Alineamos el texto pequeño a la izquierda */
+    color: var(--color-gris-oscuro); /* Cambiamos el color del texto a gris oscuro */
 }
 
 .services-container {
@@ -410,25 +417,47 @@ header {
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s;
-}
-
-.service-item img {
-    width: 80px;
-    margin-bottom: 20px;
+    height: 400px; /* Aumentamos la altura al doble */
+    position: relative;
+    background-size: cover; /* Ajustamos el fondo de imagen para cubrir toda el área */
+    background-position: center;
 }
 
 .service-item h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
+    color: var(--color-azul-claro); /* Cambiamos el color del título a azul claro */
 }
 
 .service-item p {
     font-size: 1rem;
+    color: var(--color-gris-oscuro); /* Cambiamos el color del texto a gris oscuro */
 }
 
 .service-item:hover {
     transform: translateY(-10px);
 }
+
+/* Primer rectángulo con fondo de imagen */
+.service-item:nth-child(1) {
+    background-image: url('assets/fondo5.jpg');
+}
+
+/* Segundo rectángulo con fondo de imagen */
+.service-item:nth-child(2) {
+    background-image: url('assets/fondo4.jpg');
+}
+
+/* Tercer rectángulo con fondo de imagen */
+.service-item:nth-child(3) {
+    background-image: url('assets/fondo2.jpg');
+}
+
+/* Cuarto rectángulo con fondo de imagen */
+.service-item:nth-child(4) {
+    background-image: url('assets/fondo1.jpg');
+}
+
 
 /* Sección del Equipo */
 .team {
