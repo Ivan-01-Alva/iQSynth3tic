@@ -389,20 +389,81 @@ header {
     justify-content: center;
 }
 
+/* Contenedor del rectángulo para hacer el giro */
 .service-item {
     background-color: var(--color-gris-claro);
     border: 1px solid var(--color-gris-oscuro);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     flex: 1 1 250px;
     margin: 20px;
-    padding: 30px;
+    padding: 0;
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s;
-    height: 400px; /* Aumentamos la altura al doble */
+    transition: transform 0.8s; /* Añadimos la transición para el giro */
+    height: 400px;
     position: relative;
-    background-size: cover; /* Ajustamos el fondo de imagen para cubrir toda el área */
+    background-size: cover;
     background-position: center;
+    perspective: 1000px; /* Necesario para el efecto 3D */
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.service-item .flip-card-front, .service-item .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Ocultar la cara trasera durante el giro */
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-item .flip-card-front {
+    background-color: var(--color-gris-claro);
+    z-index: 2;
+}
+
+.service-item .flip-card-back {
+    background-color: var(--color-gris-claro);
+    color: var(--color-gris-oscuro);
+    transform: rotateY(180deg);
+}
+
+.service-item.flipped .flip-card-inner {
+    transform: rotateY(180deg); /* Efecto de giro */
+}
+
+/* Primer rectángulo con fondo de imagen */
+.service-item:nth-child(1) .flip-card-front {
+    background-image: url('assets/fondo5.jpg');
+}
+
+/* Segundo rectángulo con fondo de imagen */
+.service-item:nth-child(2) .flip-card-front {
+    background-image: url('assets/fondo4.jpg');
+}
+
+/* Tercer rectángulo con fondo de imagen */
+.service-item:nth-child(3) .flip-card-front {
+    background-image: url('assets/fondo2.jpg');
+}
+
+/* Cuarto rectángulo con fondo de imagen */
+.service-item:nth-child(4) .flip-card-front {
+    background-image: url('assets/fondo1.jpg');
 }
 
 .service-item h3 {
@@ -414,31 +475,16 @@ header {
 .service-item p {
     font-size: 1rem;
     color: var(--color-gris-oscuro); /* Cambiamos el color del texto a gris oscuro */
+    padding: 20px;
 }
 
-.service-item:hover {
-    transform: translateY(-10px);
+/* Ajustes de la cara trasera */
+.flip-card-back p {
+    color: var(--color-gris-oscuro);
+    font-size: 1rem;
+    text-align: center;
 }
 
-/* Primer rectángulo con fondo de imagen */
-.service-item:nth-child(1) {
-    background-image: url('assets/fondo5.jpg');
-}
-
-/* Segundo rectángulo con fondo de imagen */
-.service-item:nth-child(2) {
-    background-image: url('assets/fondo4.jpg');
-}
-
-/* Tercer rectángulo con fondo de imagen */
-.service-item:nth-child(3) {
-    background-image: url('assets/fondo2.jpg');
-}
-
-/* Cuarto rectángulo con fondo de imagen */
-.service-item:nth-child(4) {
-    background-image: url('assets/fondo1.jpg');
-}
 
 
 /* Sección del Equipo */
