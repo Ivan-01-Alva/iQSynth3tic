@@ -444,6 +444,7 @@ header {
     border-radius: 10px; /* Redondear la imagen para ajustarse a la forma */
 }
 
+
 .service-item .flip-card-back {
     background-color: var(--color-gris-claro);
     color: var(--color-gris-oscuro);
