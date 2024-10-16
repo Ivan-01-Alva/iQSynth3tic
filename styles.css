@@ -247,7 +247,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 40vh;
     text-align: center;
     padding: 40px;
     position: relative;
