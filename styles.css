@@ -476,16 +476,17 @@ header {
     border-radius: 25px;
 }
 
+/* Ajustes de la cara trasera */
 .service-item .flip-card-back {
     background-color: var(--color-gris-claro);
-    color: var(--color-gris-oscuro);
+    color: white;
     transform: rotateY(180deg);
-    background-image: url('assets/guides.gif.webp'); /* Restauramos el GIF en la parte trasera */
-    background-size: cover;
+    background-image: url('assets/guides.gif.webp'); /* Añadir el GIF */
+    background-size: contain; /* Asegura que el GIF se ajuste dentro sin distorsionar */
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 25px;
-    padding-top: 20px; /* Aseguramos que el contenido se mantenga en la parte superior */
+    padding-top: 20px;
 }
 
 .service-item.flipped .flip-card-inner {
