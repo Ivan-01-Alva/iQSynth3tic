@@ -261,31 +261,13 @@ header {
     border-radius: 25px; /* Ajustamos los bordes */
     border: none;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     position: relative;
     padding: 40px;
     flex-direction: column;
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.1);
 }
-
-/* Rectángulo derecho con imagen de fondo y texto "Evolución" */
-.hero-right-rectangle {
-    width: 50%; /* Tamaño ajustable */
-    height: 70vh; /* Ajustar la altura del rectángulo */
-    background-image: url('assets/imagen1.jpg'); /* Imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end; /* Alinear el texto "Evolución" cerca del borde inferior */
-    position: relative;
-    justify-content: center;
-    padding-bottom: 20px;
-    border: none; /* Sin bordes visibles */
-    border-radius: 25px; /* Bordes redondeados */
-    box-shadow: 0px 16px 30px rgba(0,0,0,0.1); /* Sombra sutil */
-}
-
 
 /* Contenido en la sección inter1 */
 .inter-content {
