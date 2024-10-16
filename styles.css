@@ -21,20 +21,21 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Manrope', sans-serif;
     color: var(--color-azul-oscuro);
     background-color: var(--color-blanco);
 }
 
 /* Barra de Navegación */
 header {
-    width: 100%;
+    width: 88%;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.90);
+    background-color: rgba(255, 255, 255, 0.60);
     z-index: 1000;
-    top: 0;
-    left: 0;
-    border-radius: 0;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,7 +43,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
+    padding: 4px 3%;
 }
 
 .logo a {
@@ -54,7 +55,7 @@ header {
 .logo-img {
     height: 40px;
     width: auto;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .company-name {
@@ -77,11 +78,12 @@ header {
     font-size: 1.1rem;
     color: var(--color-gris-oscuro);
     transition: color 0.3s;
-    font-weight: 400;
+     font-weight: 400;
 }
 
 .nav-links a:hover {
     color: var(--color-marron-rojizo);
+     font-weight: 400;
 }
 
 .hamburger {
@@ -91,64 +93,64 @@ header {
 }
 
 .hamburger .bar {
-    width: 25px;
+    width: 20px;
     height: 3px;
-    background-color: var(--color-azul-oscuro);
+    background-color: var(--color-blanco);
     margin: 4px 0;
     transition: 0.4s;
 }
 
-/* Sección Hero */
+/* Fondo general de la Sección Hero */
 .hero {
     background-color: var(--color-blanco);
     min-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 130px 5% 100px;
     gap: 20px;
     position: relative;
 }
 
-.hero-left-rectangle,
-.hero-right-rectangle {
-    width: 48%;
-    height: auto;
+/* Rectángulo Izquierdo */
+.hero-left-rectangle {
+    width: 50%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
+    position: relative; /* Para que el botón absoluto se coloque correctamente */
+    text-align: center;
+    border: 2px solid transparent;
     border-radius: 45px;
     padding: 40px;
-    box-sizing: border-box;
-}
-
-.hero-left-rectangle {
-    text-align: center;
-    position: relative;
-    padding-bottom: 80px;
+    padding-bottom: 80px; /* Espacio para que el botón no se solape con el contenido */
 }
 
 .hero-left-rectangle .hero-text h1 {
     margin-top: 20px;
     font-size: 6rem;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
+/* Palabras clave */
 .hero-left-rectangle .keywords {
     margin: 0 auto;
     font-size: 4rem;
     line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto; /* Ajustamos para que solo ocupe el espacio necesario */
     font-weight: 600;
-}
-
-.hero-left-rectangle .keyword {
-    margin: 10px 0;
 }
 
 .hero-left-rectangle .keyword.highlighted {
     color: var(--color-azul-claro);
+    margin-left: 50px;
+    text-align: center;
 }
 
+/* Botón */
 .hero-left-rectangle .btn {
     background-color: var(--color-blanco);
     color: var(--color-azul-claro);
@@ -157,121 +159,159 @@ header {
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    position: absolute;
-    bottom: 20px;
+    position: absolute; /* Fijamos el botón en la parte inferior */
+    bottom: 20px; /* Asegura que esté cerca del borde inferior */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Centra el botón horizontalmente */
     text-decoration: none;
+    background-image: none;
     transition: background-color 0.3s, color 0.3s;
 }
-
+/* Botón hover con imagen de fondo */
 .hero-left-rectangle .btn:hover {
-    background-image: url('assets/fondo2.png');
+    background-image: url('assets/fondo2.png'); /* Fondo con imagen cuando se activa */
     background-size: cover;
-    color: var(--color-blanco);
+    color: var(--color-blanco); /* Color de texto cuando se activa */
     border: none;
 }
 
+/* Rectángulo derecho con imagen de fondo y texto "Evolución" */
 .hero-right-rectangle {
-    background-image: url('assets/imagen1.jpg');
+    width: 50%; /* Tamaño ajustable */
+    height: 70vh; /* Ajustar la altura del rectángulo */
+    background-image: url('assets/imagen1.jpg'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
-    align-items: flex-end;
+    display: flex;
+    align-items: flex-end; /* Alinear el texto "Evolución" cerca del borde inferior */
     justify-content: center;
     padding-bottom: 20px;
-    border-radius: 25px;
-    box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.1);
+    border: none; /* Sin bordes visibles */
+    border-radius: 25px; /* Bordes redondeados */
+    box-shadow: 0px 16px 30px rgba(0,0,0,0.1); /* Sombra sutil */
 }
 
+/* Texto "Evolución" en el rectángulo derecho */
 .hero-right-rectangle .evolucion-text {
     font-size: 3rem;
     color: var(--color-blanco);
     text-align: center;
+     bottom: 30px;
 }
 
+/* Contenedor para las frases de desplazamiento */
 .moving-text-container {
     position: absolute;
-    bottom: 50px;
-    width: 100%;
+    bottom: 50px; /* Colocarlo al final de la sección hero */
+    width: 100%; /* Ocupa todo el ancho */
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
-    white-space: nowrap;
+    overflow: hidden; /* Ocultar el desbordamiento de las frases */
+    white-space: nowrap; /* Evitar que las frases se dividan en varias líneas */
     padding: 10px 0;
 }
 
+/* Estilo para las frases */
 .moving-text {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.5rem; /* Tamaño pequeño pero legible */
+    font-weight: 600; /* Grosor ligero para el texto */
     color: #af73c9;
-    animation: moveText 26s linear infinite;
-    opacity: 0;
+    animation: moveText 26s linear infinite; /* Ambas frases tendrán la misma duración */
+    opacity: 0; /* Ocultamos la frase inicialmente para hacer una transición suave */
 }
 
+/* Sincronización de la segunda frase */
 .moving-text:nth-child(2) {
-    animation-delay: 13s;
+    animation-delay: 7.5s; /* La segunda frase comenzará 15s después de la primera */
 }
 
+/* Animación para que las frases se desplacen */
 @keyframes moveText {
     0% {
-        transform: translateX(100%);
-        opacity: 1;
+        transform: translateX(150%); /* Fuera de la pantalla por la derecha */
+        opacity: 1; /* Aparece suavemente */
     }
     50% {
-        transform: translateX(0);
+        transform: translateX(0); /* Completamente visible en el centro */
         opacity: 1;
     }
     100% {
-        transform: translateX(-100%);
-        opacity: 0;
+        transform: translateX(-180%); /* Sale de la pantalla por la izquierda */
+        opacity: 0; /* Desvanece la frase para evitar el corte */
     }
 }
 
-/* Sección Intermedia */
+/* Sección intermedia (inter1) */
 .intermediate {
     background-color: var(--color-blanco);
     display: flex;
-    justify-content: center;
+    justify-content: right-end;
     align-items: center;
-    padding: 40px 5%;
+    height: 40vh;
     text-align: center;
+    padding: 40px;
+    position: relative;
 }
 
+/* Rectángulo en la sección inter1 */
 .inter-rectangle {
     background-color: #e4e9f5;
-    width: 100%;
-    max-width: 800px;
-    border-radius: 25px;
+    width: 50%; /* Ampliamos ligeramente el ancho */
+    height: auto;
+    border-radius: 25px; /* Ajustamos los bordes */
+    border: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: relative;
     padding: 40px;
+    flex-direction: column;
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Contenido en la sección inter1 */
+.inter-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste del espaciado y línea entre renglones */
 .inter-text {
     color: var(--color-gris-oscuro);
-    line-height: 1.8;
+    line-height: 1.8; /* Aumentamos el espaciado entre líneas */
     font-weight: 500;
+    text-align: center;
 }
 
+/* Estilo del primer renglón */
 .inter-text .titulo-principal {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2rem; /* Tamaño ajustado */
+    margin-bottom: 50px; /* Añadimos espacio debajo */
 }
 
+/* Estilo del segundo renglón */
 .inter-text .subtitulo {
-    font-size: 3rem;
-    margin: 20px 0;
+    font-size: 3rem; /* Ajustamos el tamaño del segundo renglón */
+    color: var(--color-gris-oscuro); /* Color gris oscuro para el texto */
+    margin: 50px 0; /* Más espacio entre el primer y segundo renglón */
 }
 
 .inter-text .subtitulo .highlight {
-    color: var(--color-azul-claro);
+    color: var(--color-azul-claro); /* Solo "GPTs" en azul */
 }
 
+/* Estilo del tercer renglón */
 .inter-text .descripcion {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 30px;
+    font-size: 1rem; /* Texto más pequeño */
+    font-weight: 400; /* Aligeramos el grosor de la fuente */
+    margin-bottom: 50px; /* Espacio debajo de la descripción */
+    line-height: 1.8; /* Aumentamos el espaciado en el tercer renglón */
+    color: var(--color-gris-oscuro);
 }
 
+/* Botón "Conócenos" */
 .inter-content .btn {
     background-color: var(--color-blanco);
     color: var(--color-azul-claro);
@@ -282,8 +322,12 @@ header {
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 5px;
+    margin-top: 30px; /* Aumenta el espacio entre el tercer renglón y el botón */
+    bottom: 20px; /* Asegura que esté cerca del borde inferior */
 }
 
+/* Efecto hover del botón */
 .inter-content .btn:hover {
     background-image: url('assets/fondo2.png');
     background-size: cover;
@@ -291,25 +335,83 @@ header {
     border: none;
 }
 
+/* Ajustes de responsividad */
+@media (max-width: 768px) {
+    .intermediate {
+        padding: 20px;
+    }
+
+    .inter-rectangle {
+        width: 80%;
+    }
+
+    .inter-text .titulo-principal {
+        font-size: 2rem;
+    }
+
+    .inter-text .subtitulo {
+        font-size: 1.8rem;
+    }
+
+    .inter-text .descripcion {
+        font-size: 0.9rem;
+    }
+}
+
 /* Sección de Servicios */
 .services {
     padding: 100px 5%;
     background-color: var(--color-blanco);
+    min-height: 100vh; /* Igualamos el tamaño de la sección de servicios con la sección hero */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+    color: var(--color-gris-oscuro); /* Cambiamos el color de fuente a gris oscuro */
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: left; /* Alineamos el título a la izquierda */
+    color: var(--color-gris-oscuro); /* Cambiamos el color del título a gris oscuro */
+}
+
+.services p {
+    font-size: 1rem;
+    margin-bottom: 50px;
+    text-align: left; /* Alineamos el texto pequeño a la izquierda */
+    color: var(--color-gris-oscuro); /* Cambiamos el color del texto a gris oscuro */
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Sección de Servicios */
+.services {
+    padding: 100px 5%;
+    background-color: var(--color-blanco);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     color: var(--color-gris-oscuro);
 }
 
 .services h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    text-align: left;
+    color: var(--color-gris-oscuro);
 }
 
 .services p {
     font-size: 1rem;
     margin-bottom: 50px;
-    text-align: center;
+    text-align: left;
+    color: var(--color-gris-oscuro);
 }
 
 .services-container {
@@ -321,15 +423,22 @@ header {
 .service-item {
     background-color: white;
     border: 1px solid var(--color-gris-oscuro);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(25% - 40px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex: 1 1 250px;
     margin: 20px;
+    padding: 0;
     border-radius: 25px;
     text-align: center;
+    transition: transform 0.8s;
+    height: 650px;
     position: relative;
+    background-size: cover;
+    background-position: center;
     perspective: 1000px;
-    overflow: hidden;
-    cursor: pointer;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
 }
 
 .service-item .flip-card-inner {
@@ -338,212 +447,91 @@ header {
     height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
 }
 
-.service-item .flip-card-front,
-.service-item .flip-card-back {
+.service-item .flip-card-front, .service-item .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 25px;
+    background-color: var(--color-gris-claro);
     overflow: hidden;
 }
 
 .service-item .flip-card-front {
     background-color: var(--color-gris-claro);
     z-index: 2;
-    padding: 20px;
-}
-
-.service-item .flip-card-front img {
-    width: 60px;
-    margin-bottom: 20px;
-}
-
-.service-item .flip-card-front h3 {
-    color: var(--color-azul-oscuro);
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.service-item .flip-card-back {
-    background-image: url('assets/guides.gif.webp');
     background-size: cover;
     background-position: center;
-    transform: rotateY(180deg);
-    padding: 20px;
+    background-repeat: no-repeat;
+    border-radius: 25px;
 }
 
-.service-item .flip-card-back p {
-    color: var(--color-blanco);
-    font-size: 1rem;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 15px;
+/* Ajustes de la cara trasera */
+.service-item .flip-card-back {
+    background-color: var(--color-gris-claro);
+    color: white;
+    transform: rotateY(180deg);
+    background-image: url('assets/guides.gif.webp'); /* Añadir el GIF */
+    background-size: contain; /* Asegura que el GIF se ajuste dentro sin distorsionar */
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    padding-top: 20px;
 }
 
 .service-item.flipped .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-@media (max-width: 1024px) {
-    .service-item {
-        flex: 1 1 calc(50% - 40px);
-    }
+.service-item:nth-child(1) .flip-card-front {
+    background-image: url('assets/fondo5.jpg');
 }
 
-@media (max-width: 768px) {
-    /* Barra de Navegación */
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: var(--color-blanco);
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        border-top: 1px solid var(--color-gris-oscuro);
-    }
-
-    .nav-links.nav-active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 15px 0;
-        text-align: center;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .hamburger.toggle .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.toggle .bar:nth-child(1) {
-        transform: translateY(7px) rotate(45deg);
-    }
-
-    .hamburger.toggle .bar:nth-child(3) {
-        transform: translateY(-7px) rotate(-45deg);
-    }
-
-    /* Sección Hero */
-    .hero {
-        flex-direction: column;
-        padding: 100px 5% 50px;
-    }
-
-    .hero-left-rectangle,
-    .hero-right-rectangle {
-        width: 100%;
-    }
-
-    .hero-left-rectangle .hero-text h1 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-    }
-
-    .hero-left-rectangle .keywords {
-        font-size: 2rem;
-    }
-
-    .hero-left-rectangle .btn {
-        position: static;
-        margin-top: 20px;
-        transform: none;
-    }
-
-    /* Sección Intermedia */
-    .intermediate {
-        padding: 40px 5%;
-    }
-
-    .inter-text .titulo-principal {
-        font-size: 1.8rem;
-    }
-
-    .inter-text .subtitulo {
-        font-size: 2.5rem;
-    }
-
-    .inter-text .descripcion {
-        font-size: 0.9rem;
-    }
-
-    /* Sección de Servicios */
-    .service-item {
-        flex: 1 1 100%;
-        margin: 10px 0;
-    }
-
-    .service-item .flip-card-inner {
-        height: 300px;
-    }
-
-    .service-item .flip-card-front,
-    .service-item .flip-card-back {
-        padding: 10px;
-    }
-
-    .service-item .flip-card-front h3 {
-        font-size: 1rem;
-    }
-
-    .service-item .flip-card-back p {
-        font-size: 0.9rem;
-    }
+.service-item:nth-child(2) .flip-card-front {
+    background-image: url('assets/fondo4.jpg');
 }
 
-@media (max-width: 480px) {
-    .hero-left-rectangle .hero-text h1 {
-        font-size: 2rem;
-    }
-
-    .hero-left-rectangle .keywords {
-        font-size: 1.2rem;
-    }
-
-    .hero-right-rectangle .evolucion-text {
-        font-size: 1.5rem;
-    }
-
-    .moving-text {
-        font-size: 0.9rem;
-    }
-
-    .inter-text .subtitulo {
-        font-size: 1.5rem;
-    }
-
-    .inter-text .titulo-principal {
-        font-size: 1.2rem;
-    }
+.service-item:nth-child(3) .flip-card-front {
+    background-image: url('assets/fondo2.jpg');
 }
 
-/* Estilos adicionales */
-footer {
-    background-color: var(--color-gris-oscuro);
+.service-item:nth-child(4) .flip-card-front {
+    background-image: url('assets/fondo1.jpg');
+}
+
+.service-item .flip-card-front img {
+    margin-top: 25px;
+    width: 60px;
+}
+
+.service-item .flip-card-front h3 {
+    color: white;
+    margin-top: 25px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: var(--color-gris-oscuro);
+    padding: 20px;
+}
+
+/* Ajustes de la cara trasera */
+.flip-card-back p {
     color: var(--color-blanco);
+    font-size: 1rem;
     text-align: center;
-    padding: 20px 0;
+    margin-top: 20px; /* Mueve el texto hacia la parte superior */
 }
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-
-
 
 /* Sección del Equipo */
 .team {
