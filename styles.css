@@ -486,6 +486,12 @@ header {
     width: 60px; /* Tamaño reducido de los íconos */
 }
 
+/* Ajustes para mover los íconos más cerca del borde superior */
+.service-item .flip-card-back img {
+    margin-top: 10px; /* Acerca el ícono al borde superior */
+    width: 60px; /* Tamaño reducido de los íconos */
+}
+
 .service-item h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
