@@ -321,7 +321,7 @@ header {
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 /* Efecto hover del botón */
