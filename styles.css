@@ -259,7 +259,7 @@ header {
     width: 95%; /* Ampliamos ligeramente el ancho */
     height: auto;
     border-radius: 25px; /* Ajustamos los bordes */
-    border: 2px solid var(--color-azul-claro);
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
