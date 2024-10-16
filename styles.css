@@ -389,9 +389,39 @@ header {
     justify-content: center;
 }
 
-/* Contenedor del rectángulo para hacer el giro */
+/* Sección de Servicios */
+.services {
+    padding: 100px 5%;
+    background-color: var(--color-blanco);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--color-gris-oscuro);
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+    color: var(--color-gris-oscuro);
+}
+
+.services p {
+    font-size: 1rem;
+    margin-bottom: 50px;
+    text-align: left;
+    color: var(--color-gris-oscuro);
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .service-item {
-    background-color: white; /* Cambiamos el fondo a blanco para todo el rectángulo */
+    background-color: white;
     border: 1px solid var(--color-gris-oscuro);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     flex: 1 1 250px;
@@ -404,7 +434,7 @@ header {
     position: relative;
     background-size: cover;
     background-position: center;
-    perspective: 1000px; /* Necesario para el efecto 3D */
+    perspective: 1000px;
 }
 
 .service-item:hover {
@@ -417,24 +447,24 @@ header {
     height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    background-color: white; /* Fondo blanco durante el giro */
-    border-radius: 25px; /* Redondeamos todo el contenedor interior */
-    overflow: hidden; /* Ocultamos cualquier parte que sobresalga */
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
 }
 
 .service-item .flip-card-front, .service-item .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Ocultar la backface */
-    backface-visibility: hidden; /* Hacemos que la cara trasera no sea visible */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alineamos todo el contenido al principio (arriba) */
-    align-items: center; /* Centramos horizontalmente el contenido */
-    border-radius: 25px; /* Aseguramos que las esquinas sean redondeadas */
-    background-color: var(--color-gris-claro); /* Fondo gris claro */
-    overflow: hidden; /* Aseguramos que el contenido respete las esquinas redondeadas */
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 25px;
+    background-color: var(--color-gris-claro);
+    overflow: hidden;
 }
 
 .service-item .flip-card-front {
@@ -443,53 +473,49 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 25px; /* Redondeamos las esquinas del frente también */
+    border-radius: 25px;
 }
 
 .service-item .flip-card-back {
     background-color: var(--color-gris-claro);
     color: var(--color-gris-oscuro);
     transform: rotateY(180deg);
-    background-image: url('assets/guides.gif.webp'); /* Añadir GIF en el reverso */
-    background-size: cover; /* Aseguramos que el GIF cubra toda la parte trasera */
+    background-image: url('assets/guides.gif.webp'); /* Restauramos el GIF en la parte trasera */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 25px; /* Aseguramos que las esquinas sean redondeadas */
+    border-radius: 25px;
+    padding-top: 20px; /* Aseguramos que el contenido se mantenga en la parte superior */
 }
 
 .service-item.flipped .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-/* Primer rectángulo con fondo de imagen */
 .service-item:nth-child(1) .flip-card-front {
     background-image: url('assets/fondo5.jpg');
 }
 
-/* Segundo rectángulo con fondo de imagen */
 .service-item:nth-child(2) .flip-card-front {
     background-image: url('assets/fondo4.jpg');
 }
 
-/* Tercer rectángulo con fondo de imagen */
 .service-item:nth-child(3) .flip-card-front {
     background-image: url('assets/fondo2.jpg');
 }
 
-/* Cuarto rectángulo con fondo de imagen */
 .service-item:nth-child(4) .flip-card-front {
     background-image: url('assets/fondo1.jpg');
 }
 
-/* Ajustes del ícono y el texto para acercarlos al borde superior */
 .service-item .flip-card-front img {
-    margin-top: 25px; /* Acerca el ícono al borde superior */
-    width: 60px; /* Tamaño del ícono */
+    margin-top: 25px;
+    width: 60px;
 }
 
 .service-item .flip-card-front h3 {
-    color: white; /* Cambiamos el color del texto a blanco */
-    margin-top: 25px; /* Espacio entre el ícono y el texto */
+    color: white;
+    margin-top: 25px;
 }
 
 .service-item p {
@@ -500,10 +526,12 @@ header {
 
 /* Ajustes de la cara trasera */
 .flip-card-back p {
-    color: var(--color-gris-oscuro);
+    color: var(--color-blanco);
     font-size: 1rem;
     text-align: center;
+    margin-top: 20px; /* Mueve el texto hacia la parte superior */
 }
+
 
 /* Sección del Equipo */
 .team {
